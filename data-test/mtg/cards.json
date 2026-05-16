@@ -1,0 +1,1057 @@
+[
+  {
+    "id": "fea89ca0-8070-4f28-9851-994314f9d248",
+    "gameId": "mtg",
+    "name": "Aang, at the Crossroads // Aang, Destined Savior",
+    "type": "Legendary Creature — Human Avatar Ally // Legendary Creature — Avatar Ally",
+    "subtypes": [
+      "Avatar",
+      "Ally"
+    ],
+    "text": "",
+    "imageUrl": "https://cards.scryfall.io/normal/front/f/e/fea89ca0-8070-4f28-9851-994314f9d248.jpg?1764522003",
+    "rarity": "rare",
+    "attributes": {
+      "cmc": 5,
+      "set": "Avatar: The Last Airbender"
+    }
+  },
+  {
+    "id": "720fbd87-b1c1-4b3b-97a1-46b943b115e3",
+    "gameId": "mtg",
+    "name": "Aang's Iceberg",
+    "type": "Enchantment",
+    "subtypes": [
+      "Enchantment"
+    ],
+    "text": "Flash\nWhen this enchantment enters, exile up to one other target nonland permanent until this enchantment leaves the battlefield.\nWaterbend {3}: Sacrifice this enchantment. If you do, scry 2. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}.)",
+    "imageUrl": "https://cards.scryfall.io/normal/front/7/2/720fbd87-b1c1-4b3b-97a1-46b943b115e3.jpg?1764119900",
+    "rarity": "rare",
+    "attributes": {
+      "mana_cost": "{2}{W}",
+      "cmc": 3,
+      "colors": [
+        "W"
+      ],
+      "set": "Avatar: The Last Airbender"
+    }
+  },
+  {
+    "id": "5e51f727-5a9b-4bc7-83a9-dbcf1c933e15",
+    "gameId": "mtg",
+    "name": "Aang's Journey",
+    "type": "Sorcery — Lesson",
+    "subtypes": [
+      "Lesson"
+    ],
+    "text": "Kicker {2} (You may pay an additional {2} as you cast this spell.)\nSearch your library for a basic land card. If this spell was kicked, instead search your library for a basic land card and a Shrine card. Reveal those cards, put them into your hand, then shuffle.\nYou gain 2 life.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/5/e/5e51f727-5a9b-4bc7-83a9-dbcf1c933e15.jpg?1778833139",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "colors": [],
+      "set": "Avatar: The Last Airbender"
+    }
+  },
+  {
+    "id": "82866a0e-485a-4f7e-8c49-f7d9ff3f4ad4",
+    "gameId": "mtg",
+    "name": "Aang, Swift Savior // Aang and La, Ocean's Fury",
+    "type": "Legendary Creature — Human Avatar Ally // Legendary Creature — Avatar Spirit Ally",
+    "subtypes": [
+      "Avatar",
+      "Spirit",
+      "Ally"
+    ],
+    "text": "",
+    "imageUrl": "https://cards.scryfall.io/normal/front/8/2/82866a0e-485a-4f7e-8c49-f7d9ff3f4ad4.jpg?1778914119",
+    "rarity": "rare",
+    "attributes": {
+      "cmc": 3,
+      "set": "Avatar: The Last Airbender"
+    }
+  },
+  {
+    "id": "245e008c-e073-443f-9592-6f628c0026ec",
+    "gameId": "mtg",
+    "name": "Aang, the Last Airbender",
+    "type": "Legendary Creature — Human Avatar Ally",
+    "subtypes": [
+      "Human",
+      "Avatar",
+      "Ally"
+    ],
+    "text": "Flying\nWhen Aang enters, airbend up to one other target nonland permanent. (Exile it. While it's exiled, its owner may cast it for {2} rather than its mana cost.)\nWhenever you cast a Lesson spell, Aang gains lifelink until end of turn.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/2/4/245e008c-e073-443f-9592-6f628c0026ec.jpg?1764119893",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{3}{W}",
+      "cmc": 4,
+      "power": "3",
+      "toughness": "2",
+      "colors": [
+        "W"
+      ],
+      "set": "Avatar: The Last Airbender"
+    }
+  },
+  {
+    "id": "fbdaa29b-85ff-4a06-b27e-fcdbdfd4a3fe",
+    "gameId": "mtg",
+    "name": "Aatchik, Emerald Radian",
+    "type": "Legendary Creature — Insect Druid",
+    "subtypes": [
+      "Insect",
+      "Druid"
+    ],
+    "text": "When Aatchik enters, create a 1/1 green Insect creature token for each artifact and/or creature card in your graveyard.\nWhenever another Insect you control dies, put a +1/+1 counter on Aatchik. Each opponent loses 1 life.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/f/b/fbdaa29b-85ff-4a06-b27e-fcdbdfd4a3fe.jpg?1738356563",
+    "rarity": "rare",
+    "attributes": {
+      "mana_cost": "{3}{B}{B}{G}",
+      "cmc": 6,
+      "power": "3",
+      "toughness": "3",
+      "colors": [
+        "B",
+        "G"
+      ],
+      "set": "Aetherdrift"
+    }
+  },
+  {
+    "id": "74ca45a4-97ab-4255-9129-884e8b42b984",
+    "gameId": "mtg",
+    "name": "Abandon Attachments",
+    "type": "Instant — Lesson",
+    "subtypes": [
+      "Lesson"
+    ],
+    "text": "You may discard a card. If you do, draw two cards.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/7/4/74ca45a4-97ab-4255-9129-884e8b42b984.jpg?1764121430",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{1}{U/R}",
+      "cmc": 2,
+      "colors": [
+        "R",
+        "U"
+      ],
+      "set": "Avatar: The Last Airbender"
+    }
+  },
+  {
+    "id": "9c0433f9-8f1e-4a19-a83f-a41925f1b1a9",
+    "gameId": "mtg",
+    "name": "Abandoned Air Temple",
+    "type": "Land",
+    "subtypes": [
+      "Land"
+    ],
+    "text": "This land enters tapped unless you control a basic land.\n{T}: Add {W}.\n{3}{W}, {T}: Put a +1/+1 counter on each creature you control.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/9/c/9c0433f9-8f1e-4a19-a83f-a41925f1b1a9.jpg?1764121937",
+    "rarity": "rare",
+    "attributes": {
+      "mana_cost": "",
+      "cmc": 0,
+      "colors": [],
+      "set": "Avatar: The Last Airbender"
+    }
+  },
+  {
+    "id": "ee0565f5-ebdb-43f9-bbb4-0485b1968937",
+    "gameId": "mtg",
+    "name": "Abandoned Campground",
+    "type": "Land",
+    "subtypes": [
+      "Land"
+    ],
+    "text": "This land enters tapped unless a player has 13 or less life.\n{T}: Add {W} or {U}.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/e/e/ee0565f5-ebdb-43f9-bbb4-0485b1968937.jpg?1726286826",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "",
+      "cmc": 0,
+      "colors": [],
+      "set": "Duskmourn: House of Horror"
+    }
+  },
+  {
+    "id": "797131cf-d80d-4050-bebd-2ce1d7fae5d0",
+    "gameId": "mtg",
+    "name": "Aberrant Manawurm",
+    "type": "Creature — Wurm",
+    "subtypes": [
+      "Wurm"
+    ],
+    "text": "Trample\nWhenever you cast an instant or sorcery spell, this creature gets +X/+0 until end of turn, where X is the amount of mana spent to cast that spell.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/7/9/797131cf-d80d-4050-bebd-2ce1d7fae5d0.jpg?1775937935",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{3}{G}",
+      "cmc": 4,
+      "power": "2",
+      "toughness": "5",
+      "colors": [
+        "G"
+      ],
+      "set": "Secrets of Strixhaven"
+    }
+  },
+  {
+    "id": "d2705b43-a94a-44c0-8740-82e0b296820c",
+    "gameId": "mtg",
+    "name": "Abhorrent Oculus",
+    "type": "Creature — Eye",
+    "subtypes": [
+      "Eye"
+    ],
+    "text": "As an additional cost to cast this spell, exile six cards from your graveyard.\nFlying\nAt the beginning of each opponent's upkeep, manifest dread. (Look at the top two cards of your library. Put one onto the battlefield face down as a 2/2 creature and the other into your graveyard. Turn it face up any time for its mana cost if it's a creature card.)",
+    "imageUrl": "https://cards.scryfall.io/normal/front/d/2/d2705b43-a94a-44c0-8740-82e0b296820c.jpg?1726286015",
+    "rarity": "mythic",
+    "attributes": {
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "power": "5",
+      "toughness": "5",
+      "colors": [
+        "U"
+      ],
+      "set": "Duskmourn: House of Horror"
+    }
+  },
+  {
+    "id": "bf708169-a307-494b-b8d8-baae53b2e2f2",
+    "gameId": "mtg",
+    "name": "Abigale, Eloquent First-Year",
+    "type": "Legendary Creature — Bird Bard",
+    "subtypes": [
+      "Bird",
+      "Bard"
+    ],
+    "text": "Flying, first strike, lifelink\nWhen Abigale enters, up to one other target creature loses all abilities. Put a flying counter, a first strike counter, and a lifelink counter on that creature.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/b/f/bf708169-a307-494b-b8d8-baae53b2e2f2.jpg?1767658678",
+    "rarity": "rare",
+    "attributes": {
+      "mana_cost": "{W/B}{W/B}",
+      "cmc": 2,
+      "power": "1",
+      "toughness": "1",
+      "colors": [
+        "B",
+        "W"
+      ],
+      "set": "Lorwyn Eclipsed"
+    }
+  },
+  {
+    "id": "77285d12-e658-4eb3-ba13-ff202afab9c8",
+    "gameId": "mtg",
+    "name": "Abigale, Poet Laureate // Heroic Stanza",
+    "type": "Legendary Creature — Bird Bard // Sorcery",
+    "subtypes": [
+      "Bird",
+      "Bard",
+      "//",
+      "Sorcery"
+    ],
+    "text": "",
+    "imageUrl": "https://cards.scryfall.io/normal/front/7/7/77285d12-e658-4eb3-ba13-ff202afab9c8.jpg?1778164962",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{1}{W}{B} // {1}{W/B}",
+      "cmc": 3,
+      "power": "2",
+      "toughness": "3",
+      "colors": [
+        "B",
+        "W"
+      ],
+      "set": "Secrets of Strixhaven"
+    }
+  },
+  {
+    "id": "1add1757-c1f8-448a-b279-c6940fb7ad5f",
+    "gameId": "mtg",
+    "name": "Abrade",
+    "type": "Instant",
+    "subtypes": [
+      "Instant"
+    ],
+    "text": "Choose one —\n• Abrade deals 3 damage to target creature.\n• Destroy target artifact.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/1/a/1add1757-c1f8-448a-b279-c6940fb7ad5f.jpg?1775941207",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{1}{R}",
+      "cmc": 2,
+      "colors": [
+        "R"
+      ],
+      "set": "Secrets of Strixhaven Commander"
+    }
+  },
+  {
+    "id": "19e96521-b4ce-4a36-a887-200e05ccc804",
+    "gameId": "mtg",
+    "name": "Abraded Bluffs",
+    "type": "Land — Desert",
+    "subtypes": [
+      "Desert"
+    ],
+    "text": "This land enters tapped.\nWhen this land enters, it deals 1 damage to target opponent.\n{T}: Add {R} or {W}.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/1/9/19e96521-b4ce-4a36-a887-200e05ccc804.jpg?1712356303",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "",
+      "cmc": 0,
+      "colors": [],
+      "set": "Outlaws of Thunder Junction"
+    }
+  },
+  {
+    "id": "aa192912-c9ee-403f-8a46-a338c9edb4b9",
+    "gameId": "mtg",
+    "name": "Absolute Virtue",
+    "type": "Legendary Creature — Avatar Warrior",
+    "subtypes": [
+      "Avatar",
+      "Warrior"
+    ],
+    "text": "This spell can't be countered.\nFlying\nYou have protection from each of your opponents. (You can't be dealt damage, enchanted, or targeted by anything controlled by your opponents.)",
+    "imageUrl": "https://cards.scryfall.io/normal/front/a/a/aa192912-c9ee-403f-8a46-a338c9edb4b9.jpg?1748706551",
+    "rarity": "mythic",
+    "attributes": {
+      "mana_cost": "{6}{W}{U}",
+      "cmc": 8,
+      "power": "8",
+      "toughness": "8",
+      "colors": [
+        "U",
+        "W"
+      ],
+      "set": "Final Fantasy"
+    }
+  },
+  {
+    "id": "bd6e71a1-713e-4eca-bd65-9f0638c16794",
+    "gameId": "mtg",
+    "name": "Absolving Lammasu",
+    "type": "Creature — Lammasu",
+    "subtypes": [
+      "Lammasu"
+    ],
+    "text": "Flying\nWhen this creature enters, all suspected creatures are no longer suspected.\nWhen this creature dies, you gain 3 life and suspect up to one target creature an opponent controls. (A suspected creature has menace and can't block.)",
+    "imageUrl": "https://cards.scryfall.io/normal/front/b/d/bd6e71a1-713e-4eca-bd65-9f0638c16794.jpg?1706389555",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{4}{W}",
+      "cmc": 5,
+      "power": "4",
+      "toughness": "3",
+      "colors": [
+        "W"
+      ],
+      "set": "Murders at Karlov Manor"
+    }
+  },
+  {
+    "id": "ea008094-d995-4740-9b39-c61049356c55",
+    "gameId": "mtg",
+    "name": "Abstract Paintmage",
+    "type": "Creature — Djinn Sorcerer",
+    "subtypes": [
+      "Djinn",
+      "Sorcerer"
+    ],
+    "text": "At the beginning of your first main phase, add {U}{R}. Spend this mana only to cast instant and sorcery spells.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/e/a/ea008094-d995-4740-9b39-c61049356c55.jpg?1775938173",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{U}{U/R}{R}",
+      "cmc": 3,
+      "power": "2",
+      "toughness": "2",
+      "colors": [
+        "R",
+        "U"
+      ],
+      "set": "Secrets of Strixhaven"
+    }
+  },
+  {
+    "id": "40eee689-2514-421a-8056-eb7668be66ff",
+    "gameId": "mtg",
+    "name": "Abuelo, Ancestral Echo",
+    "type": "Legendary Creature — Spirit",
+    "subtypes": [
+      "Spirit"
+    ],
+    "text": "Flying, ward {2}\n{1}{W}{U}: Exile another target creature or artifact you control. Return it to the battlefield under its owner's control at the beginning of the next end step.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/4/0/40eee689-2514-421a-8056-eb7668be66ff.jpg?1699044511",
+    "rarity": "rare",
+    "attributes": {
+      "mana_cost": "{1}{W}{U}",
+      "cmc": 3,
+      "power": "2",
+      "toughness": "2",
+      "colors": [
+        "U",
+        "W"
+      ],
+      "set": "The Lost Caverns of Ixalan"
+    }
+  },
+  {
+    "id": "a559f77f-1f10-475b-9361-7f297d50f254",
+    "gameId": "mtg",
+    "name": "Abyssal Gorestalker",
+    "type": "Creature — Horror",
+    "subtypes": [
+      "Horror"
+    ],
+    "text": "When this creature enters, each player sacrifices two creatures of their choice.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/a/5/a559f77f-1f10-475b-9361-7f297d50f254.jpg?1699044037",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{4}{B}{B}",
+      "cmc": 6,
+      "power": "6",
+      "toughness": "6",
+      "colors": [
+        "B"
+      ],
+      "set": "The Lost Caverns of Ixalan"
+    }
+  },
+  {
+    "id": "f2e0f538-5825-47e9-883c-3ec6fd5b25ea",
+    "gameId": "mtg",
+    "name": "Abyssal Harvester",
+    "type": "Creature — Demon Warlock",
+    "subtypes": [
+      "Demon",
+      "Warlock"
+    ],
+    "text": "{T}: Exile target creature card from a graveyard that was put there this turn. Create a token that's a copy of it, except it's a Nightmare in addition to its other types. Then exile all other Nightmare tokens you control.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/f/2/f2e0f538-5825-47e9-883c-3ec6fd5b25ea.jpg?1730488783",
+    "rarity": "rare",
+    "attributes": {
+      "mana_cost": "{1}{B}{B}",
+      "cmc": 3,
+      "power": "3",
+      "toughness": "2",
+      "colors": [
+        "B"
+      ],
+      "set": "Foundations"
+    }
+  },
+  {
+    "id": "66555946-e747-46fa-b1ac-b103a8edcd93",
+    "gameId": "mtg",
+    "name": "Abzan Devotee",
+    "type": "Creature — Dog Cleric",
+    "subtypes": [
+      "Dog",
+      "Cleric"
+    ],
+    "text": "{1}: Add {W}, {B}, or {G}. Activate only once each turn.\n{2}{B}: Return this card from your graveyard to your hand.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/6/6/66555946-e747-46fa-b1ac-b103a8edcd93.jpg?1743204231",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{1}{B}",
+      "cmc": 2,
+      "power": "2",
+      "toughness": "1",
+      "colors": [
+        "B"
+      ],
+      "set": "Tarkir: Dragonstorm"
+    }
+  },
+  {
+    "id": "d2da9024-3b58-4a57-8f7d-4094c193daee",
+    "gameId": "mtg",
+    "name": "Abzan Monument",
+    "type": "Artifact",
+    "subtypes": [
+      "Artifact"
+    ],
+    "text": "When this artifact enters, search your library for a basic Plains, Swamp, or Forest card, reveal it, put it into your hand, then shuffle.\n{1}{W}{B}{G}, {T}, Sacrifice this artifact: Create an X/X white Spirit creature token, where X is the greatest toughness among creatures you control. Activate only as a sorcery.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/d/2/d2da9024-3b58-4a57-8f7d-4094c193daee.jpg?1743204940",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{2}",
+      "cmc": 2,
+      "colors": [],
+      "set": "Tarkir: Dragonstorm"
+    }
+  },
+  {
+    "id": "a6335319-6c92-40d4-ab2d-c06c79049c30",
+    "gameId": "mtg",
+    "name": "Accumulate Wisdom",
+    "type": "Instant — Lesson",
+    "subtypes": [
+      "Lesson"
+    ],
+    "text": "Look at the top three cards of your library. Put one of those cards into your hand and the rest on the bottom of your library in any order. Put each of those cards into your hand instead if there are three or more Lesson cards in your graveyard.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/a/6/a6335319-6c92-40d4-ab2d-c06c79049c30.jpg?1764120188",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "colors": [
+        "U"
+      ],
+      "set": "Avatar: The Last Airbender"
+    }
+  },
+  {
+    "id": "627c392c-4d18-4eb2-a4e8-c668f61f5487",
+    "gameId": "mtg",
+    "name": "Aclazotz, Deepest Betrayal // Temple of the Dead",
+    "type": "Legendary Creature — Bat God // Land",
+    "subtypes": [
+      "Bat",
+      "God",
+      "//",
+      "Land"
+    ],
+    "text": "",
+    "imageUrl": "https://cards.scryfall.io/normal/front/6/2/627c392c-4d18-4eb2-a4e8-c668f61f5487.jpg?1699044055",
+    "rarity": "mythic",
+    "attributes": {
+      "cmc": 5,
+      "set": "The Lost Caverns of Ixalan"
+    }
+  },
+  {
+    "id": "99009400-ffa4-40af-8305-78295ae605ac",
+    "gameId": "mtg",
+    "name": "Acolyte of Aclazotz",
+    "type": "Creature — Vampire Cleric",
+    "subtypes": [
+      "Vampire",
+      "Cleric"
+    ],
+    "text": "{T}, Sacrifice another creature or artifact: Each opponent loses 1 life and you gain 1 life.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/9/9/99009400-ffa4-40af-8305-78295ae605ac.jpg?1699044065",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{2}{B}",
+      "cmc": 3,
+      "power": "1",
+      "toughness": "4",
+      "colors": [
+        "B"
+      ],
+      "set": "The Lost Caverns of Ixalan"
+    }
+  },
+  {
+    "id": "6f1a7590-3eee-4803-b192-d4fb771e6a86",
+    "gameId": "mtg",
+    "name": "Acrobatic Cheerleader",
+    "type": "Creature — Human Survivor",
+    "subtypes": [
+      "Human",
+      "Survivor"
+    ],
+    "text": "Survival — At the beginning of your second main phase, if this creature is tapped, put a flying counter on it. This ability triggers only once.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/6/f/6f1a7590-3eee-4803-b192-d4fb771e6a86.jpg?1726285858",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{1}{W}",
+      "cmc": 2,
+      "power": "2",
+      "toughness": "2",
+      "colors": [
+        "W"
+      ],
+      "set": "Duskmourn: House of Horror"
+    }
+  },
+  {
+    "id": "47f82d84-03ad-42dd-80ce-f0ac5e353e46",
+    "gameId": "mtg",
+    "name": "Acrobatic Leap",
+    "type": "Instant",
+    "subtypes": [
+      "Instant"
+    ],
+    "text": "Target creature gets +1/+3 and gains flying until end of turn. Untap it.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/4/7/47f82d84-03ad-42dd-80ce-f0ac5e353e46.jpg?1699043064",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{W}",
+      "cmc": 1,
+      "colors": [
+        "W"
+      ],
+      "set": "The Lost Caverns of Ixalan"
+    }
+  },
+  {
+    "id": "bc0f5ca8-47bd-4451-8fd1-a312ff7d31ec",
+    "gameId": "mtg",
+    "name": "Action News Crew",
+    "type": "Creature — Human Citizen",
+    "subtypes": [
+      "Human",
+      "Citizen"
+    ],
+    "text": "Vigilance\nChannel — {6}, Discard this card: Put a +1/+1 counter on each creature you control. Draw a card.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/b/c/bc0f5ca8-47bd-4451-8fd1-a312ff7d31ec.jpg?1771342158",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{1}{W}",
+      "cmc": 2,
+      "power": "2",
+      "toughness": "2",
+      "colors": [
+        "W"
+      ],
+      "set": "Teenage Mutant Ninja Turtles"
+    }
+  },
+  {
+    "id": "c634273a-94b0-4104-9d10-ae522ece1fc7",
+    "gameId": "mtg",
+    "name": "Adagia, Windswept Bastion",
+    "type": "Land — Planet",
+    "subtypes": [
+      "Planet"
+    ],
+    "text": "This land enters tapped.\n{T}: Add {W}.\nStation (Tap another creature you control: Put charge counters equal to its power on this Planet. Station only as a sorcery.)\n12+ | {3}{W}, {T}: Create a token that's a copy of target artifact or enchantment you control, except it's legendary. Activate only as a sorcery.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/c/6/c634273a-94b0-4104-9d10-ae522ece1fc7.jpg?1755341328",
+    "rarity": "mythic",
+    "attributes": {
+      "mana_cost": "",
+      "cmc": 0,
+      "colors": [],
+      "set": "Edge of Eternities"
+    }
+  },
+  {
+    "id": "1fd2c9ab-b3dd-4f68-b91f-0f075a045757",
+    "gameId": "mtg",
+    "name": "Adamant Will",
+    "type": "Instant",
+    "subtypes": [
+      "Instant"
+    ],
+    "text": "Target creature gets +2/+2 and gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
+    "imageUrl": "https://cards.scryfall.io/normal/front/1/f/1fd2c9ab-b3dd-4f68-b91f-0f075a045757.jpg?1730490456",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{1}{W}",
+      "cmc": 2,
+      "colors": [
+        "W"
+      ],
+      "set": "Foundations"
+    }
+  },
+  {
+    "id": "e35e614c-51a9-4d5c-b7fa-1a0a87108785",
+    "gameId": "mtg",
+    "name": "Adaptive Automaton",
+    "type": "Artifact Creature — Construct",
+    "subtypes": [
+      "Construct"
+    ],
+    "text": "As this creature enters, choose a creature type.\nThis creature is the chosen type in addition to its other types.\nOther creatures you control of the chosen type get +1/+1.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/e/3/e35e614c-51a9-4d5c-b7fa-1a0a87108785.jpg?1730572767",
+    "rarity": "rare",
+    "attributes": {
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "power": "2",
+      "toughness": "2",
+      "colors": [],
+      "set": "Foundations"
+    }
+  },
+  {
+    "id": "83c91e24-b7e8-4040-80cb-d1b375002c10",
+    "gameId": "mtg",
+    "name": "Adaptive Gemguard",
+    "type": "Artifact Creature — Gnome",
+    "subtypes": [
+      "Gnome"
+    ],
+    "text": "Tap two untapped artifacts and/or creatures you control: Put a +1/+1 counter on this creature. Activate only as a sorcery.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/8/3/83c91e24-b7e8-4040-80cb-d1b375002c10.jpg?1766123403",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{3}{W}",
+      "cmc": 4,
+      "power": "3",
+      "toughness": "3",
+      "colors": [
+        "W"
+      ],
+      "set": "The Lost Caverns of Ixalan"
+    }
+  },
+  {
+    "id": "b44ec684-d558-45eb-bcd6-8119428634c2",
+    "gameId": "mtg",
+    "name": "Additive Evolution",
+    "type": "Enchantment",
+    "subtypes": [
+      "Enchantment"
+    ],
+    "text": "When this enchantment enters, create a 0/0 green and blue Fractal creature token. Put three +1/+1 counters on it.\nAt the beginning of combat on your turn, put a +1/+1 counter on target creature you control. It gains vigilance until end of turn.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/b/4/b44ec684-d558-45eb-bcd6-8119428634c2.jpg?1775937943",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{3}{G}{G}",
+      "cmc": 5,
+      "colors": [
+        "G"
+      ],
+      "set": "Secrets of Strixhaven"
+    }
+  },
+  {
+    "id": "1a67a991-1e52-4676-a2e3-2bc7aa943ab3",
+    "gameId": "mtg",
+    "name": "Adelbert Steiner",
+    "type": "Legendary Creature — Human Knight",
+    "subtypes": [
+      "Human",
+      "Knight"
+    ],
+    "text": "Lifelink\nAdelbert Steiner gets +1/+1 for each Equipment you control.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/1/a/1a67a991-1e52-4676-a2e3-2bc7aa943ab3.jpg?1748705765",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{1}{W}",
+      "cmc": 2,
+      "power": "2",
+      "toughness": "1",
+      "colors": [
+        "W"
+      ],
+      "set": "Final Fantasy"
+    }
+  },
+  {
+    "id": "6e53f246-8347-4632-9d5b-4aeb12f7b762",
+    "gameId": "mtg",
+    "name": "Adept Watershaper",
+    "type": "Creature — Merfolk Cleric",
+    "subtypes": [
+      "Merfolk",
+      "Cleric"
+    ],
+    "text": "Other tapped creatures you control have indestructible.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/6/e/6e53f246-8347-4632-9d5b-4aeb12f7b762.jpg?1767951683",
+    "rarity": "rare",
+    "attributes": {
+      "mana_cost": "{2}{W}",
+      "cmc": 3,
+      "power": "3",
+      "toughness": "4",
+      "colors": [
+        "W"
+      ],
+      "set": "Lorwyn Eclipsed"
+    }
+  },
+  {
+    "id": "bb13a34b-6ac8-47cb-9e91-47106a585fc1",
+    "gameId": "mtg",
+    "name": "Adorned Crocodile",
+    "type": "Creature — Crocodile",
+    "subtypes": [
+      "Crocodile"
+    ],
+    "text": "When this creature dies, create a 2/2 black Zombie Druid creature token.\nRenew — {B}, Exile this card from your graveyard: Put a +1/+1 counter on target creature. Activate only as a sorcery.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/b/b/bb13a34b-6ac8-47cb-9e91-47106a585fc1.jpg?1743697510",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{4}{B}",
+      "cmc": 5,
+      "power": "5",
+      "toughness": "3",
+      "colors": [
+        "B"
+      ],
+      "set": "Tarkir: Dragonstorm"
+    }
+  },
+  {
+    "id": "c8655373-320d-440d-b700-d03413f743fd",
+    "gameId": "mtg",
+    "name": "Adrenaline Jockey",
+    "type": "Creature — Minotaur Pilot",
+    "subtypes": [
+      "Minotaur",
+      "Pilot"
+    ],
+    "text": "Whenever a player casts a spell, if it's not their turn, this creature deals 4 damage to them.\nWhenever you activate an exhaust ability, put a +1/+1 counter on this creature.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/c/8/c8655373-320d-440d-b700-d03413f743fd.jpg?1738356376",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{2}{R}",
+      "cmc": 3,
+      "power": "3",
+      "toughness": "3",
+      "colors": [
+        "R"
+      ],
+      "set": "Aetherdrift"
+    }
+  },
+  {
+    "id": "0a1d6dcd-bd41-4f57-a35b-6613811fe4d4",
+    "gameId": "mtg",
+    "name": "Adventurer's Airship",
+    "type": "Artifact — Vehicle",
+    "subtypes": [
+      "Vehicle"
+    ],
+    "text": "Flying\nWhenever this Vehicle attacks, draw a card, then discard a card.\nCrew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)",
+    "imageUrl": "https://cards.scryfall.io/normal/front/0/a/0a1d6dcd-bd41-4f57-a35b-6613811fe4d4.jpg?1748718939",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "power": "3",
+      "toughness": "2",
+      "colors": [],
+      "set": "Final Fantasy"
+    }
+  },
+  {
+    "id": "f0da2ee1-986e-4cbf-92eb-d96fdb572ca5",
+    "gameId": "mtg",
+    "name": "Adventurer's Inn",
+    "type": "Land — Town",
+    "subtypes": [
+      "Town"
+    ],
+    "text": "When this land enters, you gain 2 life.\n{T}: Add {C}.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/f/0/f0da2ee1-986e-4cbf-92eb-d96fdb572ca5.jpg?1748706796",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "",
+      "cmc": 0,
+      "colors": [],
+      "set": "Final Fantasy"
+    }
+  },
+  {
+    "id": "361f9b99-5b5d-40da-b4b9-5ad90f6280ee",
+    "gameId": "mtg",
+    "name": "Adventuring Gear",
+    "type": "Artifact — Equipment",
+    "subtypes": [
+      "Equipment"
+    ],
+    "text": "Landfall — Whenever a land you control enters, equipped creature gets +2/+2 until end of turn.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
+    "imageUrl": "https://cards.scryfall.io/normal/front/3/6/361f9b99-5b5d-40da-b4b9-5ad90f6280ee.jpg?1730489534",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{1}",
+      "cmc": 1,
+      "colors": [],
+      "set": "Foundations"
+    }
+  },
+  {
+    "id": "d40cc7da-c731-418e-8547-7033d1939450",
+    "gameId": "mtg",
+    "name": "Adventurous Eater // Have a Bite",
+    "type": "Creature — Human Warlock // Sorcery",
+    "subtypes": [
+      "Human",
+      "Warlock",
+      "//",
+      "Sorcery"
+    ],
+    "text": "",
+    "imageUrl": "https://cards.scryfall.io/normal/front/d/4/d40cc7da-c731-418e-8547-7033d1939450.jpg?1775937412",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{2}{B} // {B}",
+      "cmc": 3,
+      "power": "3",
+      "toughness": "2",
+      "colors": [
+        "B"
+      ],
+      "set": "Secrets of Strixhaven"
+    }
+  },
+  {
+    "id": "19c1417a-9719-46f6-8749-d92b93ce0529",
+    "gameId": "mtg",
+    "name": "Aegis Sculptor",
+    "type": "Creature — Bird Wizard",
+    "subtypes": [
+      "Bird",
+      "Wizard"
+    ],
+    "text": "Flying\nWard {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)\nAt the beginning of your upkeep, you may exile two cards from your graveyard. If you do, put a +1/+1 counter on this creature.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/1/9/19c1417a-9719-46f6-8749-d92b93ce0529.jpg?1743204100",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{3}{U}",
+      "cmc": 4,
+      "power": "2",
+      "toughness": "3",
+      "colors": [
+        "U"
+      ],
+      "set": "Tarkir: Dragonstorm"
+    }
+  },
+  {
+    "id": "c7f2014a-fbc9-447c-a440-e06d01066bb9",
+    "gameId": "mtg",
+    "name": "Aegis Turtle",
+    "type": "Creature — Turtle",
+    "subtypes": [
+      "Turtle"
+    ],
+    "text": "",
+    "imageUrl": "https://cards.scryfall.io/normal/front/c/7/c7f2014a-fbc9-447c-a440-e06d01066bb9.jpg?1730489163",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{U}",
+      "cmc": 1,
+      "power": "0",
+      "toughness": "5",
+      "colors": [
+        "U"
+      ],
+      "set": "Foundations"
+    }
+  },
+  {
+    "id": "e86328b6-ded2-41df-8b6e-4a770e7b171e",
+    "gameId": "mtg",
+    "name": "Aerith Gainsborough",
+    "type": "Legendary Creature — Human Cleric",
+    "subtypes": [
+      "Human",
+      "Cleric"
+    ],
+    "text": "Lifelink\nWhenever you gain life, put a +1/+1 counter on Aerith Gainsborough.\nWhen Aerith Gainsborough dies, put X +1/+1 counters on each legendary creature you control, where X is the number of +1/+1 counters on Aerith Gainsborough.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/e/8/e86328b6-ded2-41df-8b6e-4a770e7b171e.jpg?1748705770",
+    "rarity": "rare",
+    "attributes": {
+      "mana_cost": "{2}{W}",
+      "cmc": 3,
+      "power": "2",
+      "toughness": "2",
+      "colors": [
+        "W"
+      ],
+      "set": "Final Fantasy"
+    }
+  },
+  {
+    "id": "3123d16c-e1e6-4659-a7a3-2ec6efc6bf08",
+    "gameId": "mtg",
+    "name": "Aerith Rescue Mission",
+    "type": "Sorcery",
+    "subtypes": [
+      "Sorcery"
+    ],
+    "text": "Choose one —\n• Take the Elevator — Create three 1/1 colorless Hero creature tokens.\n• Take 59 Flights of Stairs — Tap up to three target creatures. Put a stun counter on one of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)",
+    "imageUrl": "https://cards.scryfall.io/normal/front/3/1/3123d16c-e1e6-4659-a7a3-2ec6efc6bf08.jpg?1748705771",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{3}{W}",
+      "cmc": 4,
+      "colors": [
+        "W"
+      ],
+      "set": "Final Fantasy"
+    }
+  },
+  {
+    "id": "1e5530fc-0291-4a17-b048-c5d24e6f51d8",
+    "gameId": "mtg",
+    "name": "Aetherize",
+    "type": "Instant",
+    "subtypes": [
+      "Instant"
+    ],
+    "text": "Return all attacking creatures to their owner's hand.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/1/e/1e5530fc-0291-4a17-b048-c5d24e6f51d8.jpg?1730489167",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{3}{U}",
+      "cmc": 4,
+      "colors": [
+        "U"
+      ],
+      "set": "Foundations"
+    }
+  },
+  {
+    "id": "0a29c8a5-fd98-422c-9518-2db0993495e5",
+    "gameId": "mtg",
+    "name": "Aetherjacket",
+    "type": "Artifact Creature — Thopter",
+    "subtypes": [
+      "Thopter"
+    ],
+    "text": "Flying, vigilance\n{2}, {T}, Sacrifice this creature: Destroy another target artifact. Activate only as a sorcery.",
+    "imageUrl": "https://cards.scryfall.io/normal/front/0/a/0a29c8a5-fd98-422c-9518-2db0993495e5.jpg?1738356782",
+    "rarity": "common",
+    "attributes": {
+      "mana_cost": "{3}",
+      "cmc": 3,
+      "power": "2",
+      "toughness": "1",
+      "colors": [],
+      "set": "Aetherdrift"
+    }
+  },
+  {
+    "id": "d7033739-4cd8-4727-b9b5-099fb597006b",
+    "gameId": "mtg",
+    "name": "Aether Syphon",
+    "type": "Artifact",
+    "subtypes": [
+      "Artifact"
+    ],
+    "text": "Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)\n{2}, {T}: Draw a card.\nMax speed — Whenever you draw a card, each opponent mills two cards. (Each opponent puts the top two cards of their library into their graveyard.)",
+    "imageUrl": "https://cards.scryfall.io/normal/front/d/7/d7033739-4cd8-4727-b9b5-099fb597006b.jpg?1741125415",
+    "rarity": "uncommon",
+    "attributes": {
+      "mana_cost": "{1}{U}{U}",
+      "cmc": 3,
+      "colors": [
+        "U"
+      ],
+      "set": "Aetherdrift"
+    }
+  },
+  {
+    "id": "038710ca-c756-4e66-a9de-278e676c9f5b",
+    "gameId": "mtg",
+    "name": "Aettir and Priwen",
+    "type": "Legendary Artifact — Equipment",
+    "subtypes": [
+      "Equipment"
+    ],
+    "text": "Equipped creature has base power and toughness X/X, where X is your life total.\nEquip {5}",
+    "imageUrl": "https://cards.scryfall.io/normal/front/0/3/038710ca-c756-4e66-a9de-278e676c9f5b.jpg?1748706739",
+    "rarity": "mythic",
+    "attributes": {
+      "mana_cost": "{6}",
+      "cmc": 6,
+      "colors": [],
+      "set": "Final Fantasy"
+    }
+  }
+]

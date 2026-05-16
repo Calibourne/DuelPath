@@ -1,0 +1,71 @@
+[
+  {
+    "id": "standard",
+    "gameId": "mtg",
+    "name": "Standard",
+    "rules": {
+      "minDeckSize": 60,
+      "maxCopiesPerCard": 4
+    }
+  },
+  {
+    "id": "commander",
+    "gameId": "mtg",
+    "name": "Commander / EDH",
+    "description": "100-card singleton format.",
+    "rules": {
+      "minDeckSize": 100,
+      "maxDeckSize": 100,
+      "maxCopiesPerCard": 1
+    }
+  },
+  {
+    "id": "modern",
+    "gameId": "mtg",
+    "name": "Modern",
+    "rules": {
+      "minDeckSize": 60,
+      "maxCopiesPerCard": 4
+    }
+  },
+  {
+    "id": "pauper",
+    "gameId": "mtg",
+    "name": "Pauper",
+    "description": "Common cards only.",
+    "rules": {
+      "minDeckSize": 60,
+      "maxCopiesPerCard": 4,
+      "allowedCardTypes": [
+        "Common"
+      ]
+    }
+  },
+  {
+    "id": "pioneer",
+    "gameId": "mtg",
+    "name": "Pioneer",
+    "rules": {
+      "minDeckSize": 60,
+      "maxCopiesPerCard": 4
+    }
+  },
+  {
+    "id": "legacy",
+    "gameId": "mtg",
+    "name": "Legacy",
+    "rules": {
+      "minDeckSize": 60,
+      "maxCopiesPerCard": 4
+    }
+  },
+  {
+    "id": "vintage",
+    "gameId": "mtg",
+    "name": "Vintage",
+    "rules": {
+      "minDeckSize": 60,
+      "maxCopiesPerCard": 4
+    }
+  }
+]

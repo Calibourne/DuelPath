@@ -1,0 +1,811 @@
+[
+  {
+    "id": "80181649",
+    "gameId": "yugioh",
+    "name": "\"A Case for K9\"",
+    "type": "Spell Card",
+    "subtypes": [
+      "Continuous"
+    ],
+    "text": "When this card is activated: You can add 1 \"K9\" monster from your Deck to your hand. \"K9\" monsters you control gain 900 ATK during any turn in which your opponent has activated a monster effect in the hand or GY. If this card in the Spell & Trap Zone is destroyed by card effect: You can Set 1 \"K9\" Quick-Play Spell from your Deck or GY. You can only use this effect of \"\"A Case for K9\"\" once per turn. You can only activate 1 \"\"A Case for K9\"\" per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/80181649.jpg",
+    "rarity": "Starlight Rare",
+    "attributes": {
+      "race": "Continuous"
+    }
+  },
+  {
+    "id": "34541863",
+    "gameId": "yugioh",
+    "name": "\"A\" Cell Breeding Device",
+    "type": "Spell Card",
+    "subtypes": [
+      "Continuous"
+    ],
+    "text": "During each of your Standby Phases, put 1 A-Counter on 1 face-up monster your opponent controls.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/34541863.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Continuous"
+    }
+  },
+  {
+    "id": "64163367",
+    "gameId": "yugioh",
+    "name": "\"A\" Cell Incubator",
+    "type": "Spell Card",
+    "subtypes": [
+      "Continuous"
+    ],
+    "text": "Each time an A-Counter(s) is removed from play by a card effect, place 1 A-Counter on this card. When this card is destroyed, distribute the A-Counters on this card among face-up monsters.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/64163367.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Continuous"
+    }
+  },
+  {
+    "id": "91231901",
+    "gameId": "yugioh",
+    "name": "\"A\" Cell Recombination Device",
+    "type": "Spell Card",
+    "subtypes": [
+      "Quick-Play"
+    ],
+    "text": "Target 1 face-up monster on the field; send 1 \"Alien\" monster from your Deck to the Graveyard, and if you do, place A-Counters on that monster equal to the Level of the sent monster. During your Main Phase, except the turn this card was sent to the Graveyard: You can banish this card from your Graveyard; add 1 \"Alien\" monster from your Deck to your hand.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/91231901.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Quick-Play"
+    }
+  },
+  {
+    "id": "73262676",
+    "gameId": "yugioh",
+    "name": "\"A\" Cell Scatter Burst",
+    "type": "Spell Card",
+    "subtypes": [
+      "Quick-Play"
+    ],
+    "text": "Select 1 face-up \"Alien\" monster you control. Destroy it and distribute new A-Counters equal to its Level among your opponent's face-up monsters.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/73262676.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Quick-Play"
+    }
+  },
+  {
+    "id": "98319530",
+    "gameId": "yugioh",
+    "name": "\"Infernoble Arms - Almace\"",
+    "type": "Spell Card",
+    "subtypes": [
+      "Equip"
+    ],
+    "text": "While this card is equipped to a monster: You can equip 1 \"Infernoble Arms\" Equip Spell from your Deck or GY, except \"\"Infernoble Arms - Almace\"\", to 1 appropriate monster you control, then destroy this card. If this card is sent to the GY because the equipped monster is sent to the GY: You can target 1 of your FIRE Warrior monsters that is banished or in your GY; add it to your hand. You can only use 1 \"\"Infernoble Arms - Almace\"\" effect per turn, and only once that turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/98319530.jpg",
+    "rarity": "Quarter Century Secret Rare",
+    "attributes": {
+      "race": "Equip"
+    }
+  },
+  {
+    "id": "37478723",
+    "gameId": "yugioh",
+    "name": "\"Infernoble Arms - Durendal\"",
+    "type": "Spell Card",
+    "subtypes": [
+      "Equip"
+    ],
+    "text": "While this card is equipped to a monster: You can add 1 Level 5 or lower FIRE Warrior monster from your Deck to your hand, then destroy this card. If this card is sent to the GY because the equipped monster is sent to the GY: You can target 1 Level 5 or lower FIRE Warrior monster in your GY; Special Summon it, also you cannot Special Summon monsters for the rest of the turn, except Warrior monsters. You can only use 1 \"\"Infernoble Arms - Durendal\"\" effect per turn, and only once that turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/37478723.jpg",
+    "rarity": "Super Rare",
+    "attributes": {
+      "race": "Equip"
+    }
+  },
+  {
+    "id": "64867422",
+    "gameId": "yugioh",
+    "name": "\"Infernoble Arms - Hauteclere\"",
+    "type": "Spell Card",
+    "subtypes": [
+      "Equip"
+    ],
+    "text": "While this card is equipped to a monster: You can target 1 face-up monster you control; this turn, you cannot declare attacks, except with that monster, also it gains the ability this turn to make a second attack during each Battle Phase, then destroy this card. If this card is sent to the GY because the equipped monster is sent to the GY: You can target 1 face-up monster on the field; destroy it. You can only use 1 \"\"Infernoble Arms - Hauteclere\"\" effect per turn, and only once that turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/64867422.jpg",
+    "rarity": "Super Rare",
+    "attributes": {
+      "race": "Equip"
+    }
+  },
+  {
+    "id": "90861137",
+    "gameId": "yugioh",
+    "name": "\"Infernoble Arms - Joyeuse\"",
+    "type": "Spell Card",
+    "subtypes": [
+      "Equip"
+    ],
+    "text": "While this card is equipped to a monster: You can target 1 FIRE Warrior monster in your GY; add it to your hand, then destroy this card. If this card is sent to the GY because the equipped monster is sent to the GY: You can Special Summon 1 FIRE Warrior monster from your hand. You can only use 1 \"\"Infernoble Arms - Joyeuse\"\" effect per turn, and only once that turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/90861137.jpg",
+    "rarity": "Super Rare",
+    "attributes": {
+      "race": "Equip"
+    }
+  },
+  {
+    "id": "44256816",
+    "gameId": "yugioh",
+    "name": "1st Movement Solo",
+    "type": "Spell Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "If you control no monsters: Special Summon 1 Level 4 or lower \"Melodious\" monster from your hand or Deck. You can only activate 1 \"1st Movement Solo\" per turn. You cannot Special Summon monsters during the turn you activate this card, except \"Melodious\" monsters.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/44256816.jpg",
+    "rarity": "Super Rare",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "86988864",
+    "gameId": "yugioh",
+    "name": "3-Hump Lacooda",
+    "type": "Effect Monster",
+    "subtypes": [
+      "Beast"
+    ],
+    "text": "If there are 3 face-up \"3-Hump Lacooda\" cards on your side of the field, Tribute 2 of them to draw 3 cards.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/86988864.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "atk": 500,
+      "def": 1500,
+      "level": 3,
+      "attribute": "EARTH",
+      "race": "Beast"
+    }
+  },
+  {
+    "id": "11714098",
+    "gameId": "yugioh",
+    "name": "30,000-Year White Turtle",
+    "type": "Normal Monster",
+    "subtypes": [
+      "Aqua"
+    ],
+    "text": "''A huge turtle that has existed for over 30,000 years.''",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/11714098.jpg",
+    "attributes": {
+      "atk": 1250,
+      "def": 2100,
+      "level": 5,
+      "attribute": "WATER",
+      "race": "Aqua"
+    }
+  },
+  {
+    "id": "83994646",
+    "gameId": "yugioh",
+    "name": "4-Starred Ladybug of Doom",
+    "type": "Flip Effect Monster",
+    "subtypes": [
+      "Insect"
+    ],
+    "text": "FLIP: Destroy all Level 4 monsters your opponent controls.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/83994646.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "atk": 800,
+      "def": 1200,
+      "level": 3,
+      "attribute": "WIND",
+      "race": "Insect"
+    }
+  },
+  {
+    "id": "67048711",
+    "gameId": "yugioh",
+    "name": "7",
+    "type": "Spell Card",
+    "subtypes": [
+      "Continuous"
+    ],
+    "text": "When there are 3 face-up \"7\" cards on your side of the field, draw 3 cards from your Deck. Then destroy all \"7\" cards. When this card is sent directly from the field to your Graveyard, increase your Life Points by 700 points.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/67048711.jpg",
+    "rarity": "Short Print",
+    "attributes": {
+      "race": "Continuous"
+    }
+  },
+  {
+    "id": "23771716",
+    "gameId": "yugioh",
+    "name": "7 Colored Fish",
+    "type": "Normal Monster",
+    "subtypes": [
+      "Fish"
+    ],
+    "text": "A rare rainbow fish that has never been caught by mortal man.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/23771716.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "atk": 1800,
+      "def": 800,
+      "level": 4,
+      "attribute": "WATER",
+      "race": "Fish"
+    }
+  },
+  {
+    "id": "86198326",
+    "gameId": "yugioh",
+    "name": "7 Completed",
+    "type": "Spell Card",
+    "subtypes": [
+      "Equip"
+    ],
+    "text": "Activate this card by choosing ATK or DEF; equip only to a Machine monster. It gains 700 ATK or DEF, depending on the choice.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/86198326.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Equip"
+    }
+  },
+  {
+    "id": "14261867",
+    "gameId": "yugioh",
+    "name": "8-Claws Scorpion",
+    "type": "Effect Monster",
+    "subtypes": [
+      "Insect"
+    ],
+    "text": "Once per turn, you can flip this card into face-down Defense Position. When this card attacks an opponent's face-down Defense Position monster, this card's ATK becomes 2400 during damage calculation only.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/14261867.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "atk": 300,
+      "def": 200,
+      "level": 2,
+      "attribute": "DARK",
+      "race": "Insect"
+    }
+  },
+  {
+    "id": "4731783",
+    "gameId": "yugioh",
+    "name": "A Bao A Qu, the Lightless Shadow",
+    "type": "Link Monster",
+    "subtypes": [
+      "Fiend"
+    ],
+    "text": "2+ monsters, including a Fiend monster\r\nDuring the Main Phase (Quick Effect): You can discard 1 card, then activate 1 of these effects;\r\n● Destroy 1 card on the field.\r\n● Banish this card (until the End Phase), and if you do, Special Summon 1 LIGHT or DARK monster from your GY.\r\nDuring your Standby Phase: You can draw cards equal to the number of different Monster Types in your GY, then place cards from your hand on the bottom of the Deck in any order, equal to the number of cards you drew. You can only use each effect of \"A Bao A Qu, the Lightless Shadow\" once per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/4731783.jpg",
+    "rarity": "Quarter Century Secret Rare",
+    "attributes": {
+      "atk": 2800,
+      "def": null,
+      "level": null,
+      "attribute": "DARK",
+      "race": "Fiend"
+    }
+  },
+  {
+    "id": "24140059",
+    "gameId": "yugioh",
+    "name": "A Cat of Ill Omen",
+    "type": "Flip Effect Monster",
+    "subtypes": [
+      "Beast"
+    ],
+    "text": "FLIP: Choose 1 Trap from your Deck and place it on top of your Deck, or, if \"Necrovalley\" is on the field, you can add that Trap to your hand instead.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/24140059.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "atk": 500,
+      "def": 300,
+      "level": 2,
+      "attribute": "DARK",
+      "race": "Beast"
+    }
+  },
+  {
+    "id": "6850209",
+    "gameId": "yugioh",
+    "name": "A Deal with Dark Ruler",
+    "type": "Spell Card",
+    "subtypes": [
+      "Quick-Play"
+    ],
+    "text": "(This card is always treated as an \"Archfiend\" card.)\nIf a Level 8 or higher monster under your control was sent to the Graveyard this turn: Special Summon 1 \"Berserk Dragon\" from your hand or Deck.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/6850209.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Quick-Play"
+    }
+  },
+  {
+    "id": "49140998",
+    "gameId": "yugioh",
+    "name": "A Feather of the Phoenix",
+    "type": "Spell Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "Discard 1 card, then target 1 card in your GY; return that target to the top of your Deck.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/49140998.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "68170903",
+    "gameId": "yugioh",
+    "name": "A Feint Plan",
+    "type": "Trap Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "A player cannot attack face-down monsters during this turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/68170903.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "21597117",
+    "gameId": "yugioh",
+    "name": "A Hero Emerges",
+    "type": "Trap Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "When an opponent's monster declares an attack: Your opponent chooses 1 random card from your hand, then if it is a monster that can be Special Summoned, Special Summon it. Otherwise, send it to the Graveyard.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/21597117.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "8949584",
+    "gameId": "yugioh",
+    "name": "A Hero Lives",
+    "type": "Spell Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "If you control no face-up monsters: Pay half your LP; Special Summon 1 Level 4 or lower \"Elemental HERO\" monster from your Deck.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/8949584.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "295517",
+    "gameId": "yugioh",
+    "name": "A Legendary Ocean",
+    "type": "Spell Card",
+    "subtypes": [
+      "Field"
+    ],
+    "text": "(This card's name is always treated as \"Umi\".)\r\nAll WATER monsters on the field gain 200 ATK/DEF. Reduce the Level of all WATER monsters in both players' hands and on the field by 1.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/295517.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Field"
+    }
+  },
+  {
+    "id": "32207100",
+    "gameId": "yugioh",
+    "name": "A Major Upset",
+    "type": "Trap Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "Tribute 1 face-up Attack Position Level 2 or lower monster you control; return all Level 7 or higher Special Summoned monsters to the hand.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/32207100.jpg",
+    "rarity": "Short Print",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "51351302",
+    "gameId": "yugioh",
+    "name": "A Man with Wdjat",
+    "type": "Effect Monster",
+    "subtypes": [
+      "Spellcaster"
+    ],
+    "text": "When you Normal Summon this card, and during each of your Standby Phases, select 1 Set card on your opponent's side of the field. Pick it up and look at it, then return it to its original position.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/51351302.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "atk": 1600,
+      "def": 1600,
+      "level": 4,
+      "attribute": "DARK",
+      "race": "Spellcaster"
+    }
+  },
+  {
+    "id": "5728014",
+    "gameId": "yugioh",
+    "name": "A Rival Appears!",
+    "type": "Trap Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "Select 1 face-up monster your opponent controls. Special Summon 1 monster from your hand that has the same Level as the selected monster.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/5728014.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "44553392",
+    "gameId": "yugioh",
+    "name": "A Shattered, Colorless Realm",
+    "type": "Trap Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "If \"Vicious Astraloud\" is on the field: Target 1 card on the field; destroy it, then, if the destroyed card's original name was \"Vicious Astraloud\", you can Special Summon 1 of your banished \"Visas Starfrost\", or if it was not, you can make 1 \"Vicious Astraloud\" you control gain 1500 ATK.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/44553392.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "23587624",
+    "gameId": "yugioh",
+    "name": "A Wild Monster Appears!",
+    "type": "Spell Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "If your opponent controls a monster and you control no monsters: Special Summon from your hand, 1 monster with an original Level of 10 or lower that cannot be Normal Summoned/Set, ignoring its Summoning conditions. It is unaffected by the effects of your cards, except for its own effects and this card's, also shuffle it into the Deck during your opponent's next End Phase. For the rest of this turn, you cannot Normal Summon/Set or Special Summon monsters, and your opponent takes no damage.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/23587624.jpg",
+    "rarity": "Secret Rare",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "28596933",
+    "gameId": "yugioh",
+    "name": "A Wingbeat of Giant Dragon",
+    "type": "Spell Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "Return 1 Level 5 or higher Dragon-Type monster you control to the hand, and if you do, destroy all Spell and Trap Cards on the field.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/28596933.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "30012506",
+    "gameId": "yugioh",
+    "name": "A-Assault Core",
+    "type": "Union Effect Monster",
+    "subtypes": [
+      "Machine"
+    ],
+    "text": "Once per turn, you can either: Target 1 LIGHT Machine monster you control; equip this card to that target, OR: Unequip this card and Special Summon it. A monster equipped with this card is unaffected by your opponent's monster effects (except its own), also if the equipped monster would be destroyed by battle or card effect, destroy this card instead. If this card is sent from the field to the GY: You can add 1 other Union monster from your GY to your hand.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/30012506.jpg",
+    "rarity": "Secret Rare",
+    "attributes": {
+      "atk": 1900,
+      "def": 200,
+      "level": 4,
+      "attribute": "LIGHT",
+      "race": "Machine"
+    }
+  },
+  {
+    "id": "13026402",
+    "gameId": "yugioh",
+    "name": "A-Team: Trap Disposal Unit",
+    "type": "Effect Monster",
+    "subtypes": [
+      "Machine"
+    ],
+    "text": "This effect can be used during either player's turn. When your opponent activates a Trap Card, Tribute this face-up card to negate the activation of the Trap Card and destroy it.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/13026402.jpg",
+    "rarity": "Rare",
+    "attributes": {
+      "atk": 300,
+      "def": 400,
+      "level": 2,
+      "attribute": "FIRE",
+      "race": "Machine"
+    }
+  },
+  {
+    "id": "75926389",
+    "gameId": "yugioh",
+    "name": "A-to-Z Energy Load",
+    "type": "Trap Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "When your opponent activates a card or effect: Draw cards equal to the number of Level 8 or higher LIGHT Machine Fusion Monsters you control. During your Standby Phase: You can banish this card from your GY; shuffle up to 6 of your banished LIGHT Machine monsters into the Deck, including a Union monster. You can only use each effect of \"A-to-Z Energy Load\" once per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/75926389.jpg",
+    "rarity": "Collector's Rare",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "65172015",
+    "gameId": "yugioh",
+    "name": "A-to-Z-Dragon Buster Cannon",
+    "type": "Fusion Monster",
+    "subtypes": [
+      "Machine"
+    ],
+    "text": "\"ABC-Dragon Buster\" + \"XYZ-Dragon Cannon\"\nMust be Special Summoned (from your Extra Deck) by banishing cards you control with the above original names, and cannot be Special Summoned by other ways. (You do not use \"Polymerization\".) During either player's turn, when your opponent activates a Spell/Trap Card, or monster effect: You can discard 1 card; negate the activation, and if you do, destroy that card. During either player's turn: You can banish this card, then target 1 each of your banished \"ABC-Dragon Buster\", and \"XYZ-Dragon Cannon\"; Special Summon them.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/65172015.jpg",
+    "rarity": "Ultra Rare",
+    "attributes": {
+      "atk": 4000,
+      "def": 4000,
+      "level": 10,
+      "attribute": "LIGHT",
+      "race": "Machine"
+    }
+  },
+  {
+    "id": "28645123",
+    "gameId": "yugioh",
+    "name": "A.I. Challenge You",
+    "type": "Trap Card",
+    "subtypes": [
+      "Continuous"
+    ],
+    "text": "Monsters your opponent controls lose 100 ATK for each card you control. If your \"@Ignister\" monster battles, your opponent cannot activate cards or effects until the end of the Damage Step. When your \"@Ignister\" monster is destroyed by battle: You can target 1 other Cyberse monster with 2300 ATK in your GY; Special Summon it. You can only use this effect of \"A.I. Challenge You\" once per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/28645123.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Continuous"
+    }
+  },
+  {
+    "id": "79015062",
+    "gameId": "yugioh",
+    "name": "A.I. Connect",
+    "type": "Spell Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "Reveal 1 Cyberse monster in your hand; apply this effect based on its Attribute, also you cannot Special Summon for the rest of this turn after this card resolves, except Cyberse monsters.\r\n● DARK: Special Summon the revealed monster, and if you do, add 1 Level 4 or lower non-DARK Cyberse monster from your Deck to your hand.\r\n● Other: Shuffle the revealed monster into the Deck, and if you do, add 1 \"@Ignister\" monster with a different Attribute from your Deck to your hand.\r\nYou can only activate 1 \"A.I. Connect\" per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/79015062.jpg",
+    "rarity": "Super Rare",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "10493654",
+    "gameId": "yugioh",
+    "name": "A.I. Contact",
+    "type": "Spell Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "If \"Ignister A.I.Land\" is in your Field Zone: Reveal 1 \"Ignister A.I.Land\" in your hand; place it on the bottom of the Deck, and if you do, draw 3 cards. You can only activate 1 \"A.I. Contact\" per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/10493654.jpg",
+    "rarity": "Ultra Rare",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "59332125",
+    "gameId": "yugioh",
+    "name": "A.I. Love Fusion",
+    "type": "Spell Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "Fusion Summon 1 Cyberse Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Material. If you use your \"@Ignister\" monster as Fusion Material, you can also use 1 Link Monster your opponent controls as material. You can only activate 1 \"A.I. Love Fusion\" per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/59332125.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "6552971",
+    "gameId": "yugioh",
+    "name": "A.I. Meet You",
+    "type": "Spell Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "Reveal 1 Cyberse monster with 2300 ATK in your hand or Extra Deck, and add 1 \"@Ignister\" monster with the same Attribute from your Deck to your hand. During the End Phase of this turn, take 2300 damage if you did not Special Summon the revealed monster, or a monster with the same name, after you resolved this effect. You cannot activate monster effects for the rest of this turn after this card resolves, except Cyberse monsters. You can only activate 1 \"A.I. Meet You\" per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/6552971.jpg",
+    "rarity": "Ultra Rare",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "77421977",
+    "gameId": "yugioh",
+    "name": "A.I. Shadow",
+    "type": "Trap Card",
+    "subtypes": [
+      "Continuous"
+    ],
+    "text": "Activate this card by targeting 1 \"@Ignister\" monster you control. That monster gains 800 ATK, also all monsters your opponent controls must attack that monster you control, if able. If this face-up card in its owner's Spell & Trap Zone has left the field because of an opponent's effect, and is now in the GY or banished: Draw 1 card. You can only use this effect of \"A.I. Shadow\" once per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/77421977.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Continuous"
+    }
+  },
+  {
+    "id": "85327820",
+    "gameId": "yugioh",
+    "name": "A.I.'s Ritual",
+    "type": "Spell Card",
+    "subtypes": [
+      "Ritual"
+    ],
+    "text": "This card can be used to Ritual Summon any Cyberse Ritual Monster. You must also Tribute \"@Ignister\" monsters from your hand or field whose total Levels equal or exceed the Level of the Ritual Monster you Ritual Summon. If you control an \"@Ignister\" monster when this effect is activated, you can also use \"@Ignister\" monster(s) in your GY, by banishing them.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/85327820.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Ritual"
+    }
+  },
+  {
+    "id": "54374642",
+    "gameId": "yugioh",
+    "name": "A.I.'s Show",
+    "type": "Trap Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "While you control a Link-3 or higher \"@Ignister\" monster in the Extra Monster Zone, when an opponent's monster declares an attack: Special Summon from your Extra Deck any number of non-Link Cyberse monster(s) with 2300 ATK, whose combined ATK is less than or equal to the attacking monster's ATK, then end the Battle Phase.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/54374642.jpg",
+    "rarity": "Ultra Rare",
+    "attributes": {
+      "race": "Normal"
+    }
+  },
+  {
+    "id": "22933016",
+    "gameId": "yugioh",
+    "name": "A.I.dle Reborn",
+    "type": "Spell Card",
+    "subtypes": [
+      "Quick-Play"
+    ],
+    "text": "Target 1 \"@Ignister\" monster in your GY; Special Summon it, also you cannot Special Summon monsters for the rest of this turn after this card resolves, except Cyberse monsters. When an attack is declared involving 2 monsters: You can banish this card from your GY and 1 card from your hand, then target 1 of your \"A.I.\" Spells/Traps that is banished or in your GY, except \"A.I.dle Reborn\"; add that card to your hand. You can only use each effect of \"A.I.dle Reborn\" once per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/22933016.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Quick-Play"
+    }
+  },
+  {
+    "id": "69381150",
+    "gameId": "yugioh",
+    "name": "A.I.Q",
+    "type": "Trap Card",
+    "subtypes": [
+      "Continuous"
+    ],
+    "text": "Activate only if you control an \"@Ignister\" monster. Once per turn, during your Standby Phase, Tribute 1 Link Monster, or destroy this card. Each player can only Link Summon a monster once per turn while this card is face-up on the field.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/69381150.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "race": "Continuous"
+    }
+  },
+  {
+    "id": "96146814",
+    "gameId": "yugioh",
+    "name": "A/D Changer",
+    "type": "Effect Monster",
+    "subtypes": [
+      "Warrior"
+    ],
+    "text": "You can banish this card from your Graveyard, then target 1 monster on the field; change its battle position.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/96146814.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "atk": 100,
+      "def": 100,
+      "level": 1,
+      "attribute": "LIGHT",
+      "race": "Warrior"
+    }
+  },
+  {
+    "id": "12694768",
+    "gameId": "yugioh",
+    "name": "Abaki",
+    "type": "Effect Monster",
+    "subtypes": [
+      "Fiend"
+    ],
+    "text": "When this card is destroyed and sent to the Graveyard by battle, both players take 500 damage.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/12694768.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "atk": 1700,
+      "def": 1100,
+      "level": 4,
+      "attribute": "FIRE",
+      "race": "Fiend"
+    }
+  },
+  {
+    "id": "89718302",
+    "gameId": "yugioh",
+    "name": "Abare Ushioni",
+    "type": "Effect Monster",
+    "subtypes": [
+      "Beast-Warrior"
+    ],
+    "text": "Once per turn, you can toss a coin and call it. If you call it right, inflict 1000 damage to your opponent. If you call it wrong, you take 1000 damage.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/89718302.jpg",
+    "rarity": "Common",
+    "attributes": {
+      "atk": 1200,
+      "def": 1200,
+      "level": 4,
+      "attribute": "EARTH",
+      "race": "Beast-Warrior"
+    }
+  },
+  {
+    "id": "1561110",
+    "gameId": "yugioh",
+    "name": "ABC-Dragon Buster",
+    "type": "Fusion Monster",
+    "subtypes": [
+      "Machine"
+    ],
+    "text": "\"A-Assault Core\" + \"B-Buster Drake\" + \"C-Crush Wyvern\"\r\nMust first be Special Summoned (from your Extra Deck) by banishing the above cards you control and/or from your GY. (You do not use \"Polymerization\".) Once per turn (Quick Effect): You can discard 1 card, then target 1 card on the field; banish it. During your opponent's turn (Quick Effect): You can Tribute this card, then target 3 of your banished LIGHT Machine Union monsters with different names; Special Summon them.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/1561110.jpg",
+    "rarity": "Secret Rare",
+    "attributes": {
+      "atk": 3000,
+      "def": 2800,
+      "level": 8,
+      "attribute": "LIGHT",
+      "race": "Machine"
+    }
+  },
+  {
+    "id": "21846145",
+    "gameId": "yugioh",
+    "name": "Abduction",
+    "type": "Trap Card",
+    "subtypes": [
+      "Normal"
+    ],
+    "text": "Target 1 face-up monster your opponent controls; banish 1 monster from your Deck or Extra Deck with the same original Type, Attribute, and Level/Rank/Link Rating, and if you do, take control of that targeted monster, and if you banished a monster with the same original name, that monster's effects are negated. You can only activate 1 \"Abduction\" per turn.",
+    "imageUrl": "https://images.ygoprodeck.com/images/cards/21846145.jpg",
+    "rarity": "Super Rare",
+    "attributes": {
+      "race": "Normal"
+    }
+  }
+]

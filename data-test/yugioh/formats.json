@@ -1,0 +1,70 @@
+[
+  {
+    "id": "tcg-advanced",
+    "gameId": "yugioh",
+    "name": "TCG Advanced",
+    "rules": {
+      "minDeckSize": 40,
+      "maxDeckSize": 60,
+      "maxCopiesPerCard": 3
+    }
+  },
+  {
+    "id": "ocg-advanced",
+    "gameId": "yugioh",
+    "name": "OCG Advanced",
+    "rules": {
+      "minDeckSize": 40,
+      "maxDeckSize": 60,
+      "maxCopiesPerCard": 3
+    }
+  },
+  {
+    "id": "genesis",
+    "gameId": "yugioh",
+    "name": "Genesis",
+    "description": "A community-driven format with custom rules and card pool.",
+    "rules": {
+      "minDeckSize": 40,
+      "maxDeckSize": 60,
+      "maxCopiesPerCard": 3,
+      "maxPoints": 100,
+      "cardPoints": {
+        "34218066": 30,
+        "80181649": 50
+      }
+    }
+  },
+  {
+    "id": "speed-duel",
+    "gameId": "yugioh",
+    "name": "Speed Duel",
+    "rules": {
+      "minDeckSize": 20,
+      "maxDeckSize": 30,
+      "maxCopiesPerCard": 3
+    }
+  },
+  {
+    "id": "goat",
+    "gameId": "yugioh",
+    "name": "Goat Format",
+    "description": "Classic April 2005 retro format.",
+    "rules": {
+      "minDeckSize": 40,
+      "maxDeckSize": 60,
+      "maxCopiesPerCard": 3
+    }
+  },
+  {
+    "id": "edison",
+    "gameId": "yugioh",
+    "name": "Edison Format",
+    "description": "Popular March 2010 retro format.",
+    "rules": {
+      "minDeckSize": 40,
+      "maxDeckSize": 60,
+      "maxCopiesPerCard": 3
+    }
+  }
+]

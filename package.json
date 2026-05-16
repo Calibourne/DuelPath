@@ -1,0 +1,35 @@
+{
+  "name": "duelpath",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "echo \"No linting configured\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Calibourne/DuelPath.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Calibourne/DuelPath/issues"
+  },
+  "homepage": "https://github.com/Calibourne/DuelPath#readme",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.8.0",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.9",
+    "tsx": "^4.22.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.10.0"
+  }
+}
