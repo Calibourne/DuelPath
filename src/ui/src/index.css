@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0c;
+  --color-surface: #141417;
+  --color-primary: #00d4aa;
+  --color-border: #222226;
+  --color-text: #e1e1e3;
+  --color-text-muted: #8a8a93;
+  
+  --radius-normal: 4px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text selection:bg-primary/30 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom Scrollbar for EDOPro feel */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full hover:bg-text-muted/30 transition-colors;
+  }
+}
+
+:root {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

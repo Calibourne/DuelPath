@@ -3,15 +3,19 @@ import { StorageProvider } from '../../core/storage/StorageProvider.js';
 import { Card } from '../../core/models/Card.js';
 import { Format } from '../../core/models/Format.js';
 import { Deck } from '../../core/models/Deck.js';
-import { join } from 'path';
-import { mkdir } from 'fs/promises';
+import { dirname } from 'path';
+import { existsSync, mkdirSync } from 'fs';
 
 export class SqliteStorageProvider implements StorageProvider {
   private db: Database.Database;
 
   constructor(dbPath: string = './data/duelpath.db') {
-    // Ensure directory exists (sync for constructor simplicity, or we could have an init method)
-    // For now, we assume the directory is handled or we use the default
+    // Ensure directory exists
+    const dir = dirname(dbPath);
+    if (!existsSync(dir)) {
+      mkdirSync(dir, { recursive: true });
+    }
+    
     this.db = new Database(dbPath);
     this.init();
   }
@@ -61,6 +65,30 @@ export class SqliteStorageProvider implements StorageProvider {
         updatedAt INTEGER
       );
     `);
+
+    // 4. FTS5 Search Table
+    this.db.exec(`
+      CREATE VIRTUAL TABLE IF NOT EXISTS cards_fts USING fts5(
+        id UNINDEXED,
+        gameId UNINDEXED,
+        name,
+        text,
+        content='cards',
+        content_rowid='rowid'
+      );
+
+      -- Triggers to keep FTS index in sync
+      CREATE TRIGGER IF NOT EXISTS cards_ai AFTER INSERT ON cards BEGIN
+        INSERT INTO cards_fts(rowid, id, gameId, name, text) VALUES (new.rowid, new.id, new.gameId, new.name, new.text);
+      END;
+      CREATE TRIGGER IF NOT EXISTS cards_ad AFTER DELETE ON cards BEGIN
+        INSERT INTO cards_fts(cards_fts, rowid, id, gameId, name, text) VALUES('delete', old.rowid, old.id, old.gameId, old.name, old.text);
+      END;
+      CREATE TRIGGER IF NOT EXISTS cards_au AFTER UPDATE ON cards BEGIN
+        INSERT INTO cards_fts(cards_fts, rowid, id, gameId, name, text) VALUES('delete', old.rowid, old.id, old.gameId, old.name, old.text);
+        INSERT INTO cards_fts(rowid, id, gameId, name, text) VALUES (new.rowid, new.id, new.gameId, new.name, new.text);
+      END;
+    `);
   }
 
   async saveCards(gameId: string, cards: Card[]): Promise<void> {
@@ -86,10 +114,101 @@ export class SqliteStorageProvider implements StorageProvider {
     });
 
     transaction(cards);
+    
+    // Initial population of FTS if it was just created/updated
+    // (In a real app, triggers handle this, but for first-time ingestion we might need to kick it)
+    this.db.exec("INSERT INTO cards_fts(cards_fts) VALUES('rebuild');");
   }
 
-  async loadCards(gameId: string): Promise<Card[]> {
-    const rows = this.db.prepare('SELECT * FROM cards WHERE gameId = ?').all(gameId) as any[];
+  async loadCards(gameId: string, options?: { 
+    limit?: number; 
+    offset?: number; 
+    search?: string;
+    types?: string[];
+    attributeFilters?: Record<string, any>;
+  }): Promise<Card[]> {
+    let query = '';
+    const params: any[] = [];
+
+    if (options?.search) {
+      let ftsQuery = options.search;
+
+      // 1. Handle explicit full-string name ($) or text (@) lookups
+      if (ftsQuery.startsWith('$')) {
+        ftsQuery = `name:"${ftsQuery.substring(1).replace(/"/g, '""')}"`;
+      } else if (ftsQuery.startsWith('@')) {
+        ftsQuery = `text:"${ftsQuery.substring(1).replace(/"/g, '""')}"`;
+      } else {
+        // 2. Handle standard multi-term EDOPro syntax
+        ftsQuery = ftsQuery
+          .replace(/\$([^\s]+)/g, 'name:"$1"')
+          .replace(/@([^\s]+)/g, 'text:"$1"')
+          .replace(/!!([^\s]+)/g, 'NOT "$1"')
+          .replace(/\|\|/g, ' OR ');
+      }
+
+      // Use FTS5 MATCH for speed
+      query = `
+        SELECT c.* FROM cards c
+        JOIN cards_fts f ON c.rowid = f.rowid
+        WHERE c.gameId = ? AND cards_fts MATCH ?
+      `;
+      params.push(gameId, ftsQuery);
+    } else {
+      query = 'SELECT * FROM cards WHERE gameId = ?';
+      params.push(gameId);
+    }
+
+    if (options?.types && options.types.length > 0) {
+      const typeConditions = options.types.map(() => 'subtypes LIKE ?').join(' OR ');
+      query += ` AND (${typeConditions})`;
+      params.push(...options.types.map(t => `%\"${t}\"%`));
+    }
+
+    // Dynamic Attribute Filtering (JSON Extraction)
+    if (options?.attributeFilters) {
+      for (const [key, value] of Object.entries(options.attributeFilters)) {
+        if (value === undefined || value === null || value === '') continue;
+
+        if (Array.isArray(value)) {
+          if (value.length === 0) continue;
+          // Handle arrays (like colors in MTG)
+          const conditions = value.map(() => `json_extract(attributes, '$.${key}') LIKE ?`).join(' OR ');
+          query += ` AND (${conditions})`;
+          params.push(...value.map(v => `%${v}%`));
+        } else if (typeof value === 'object') {
+          if (value.min !== undefined) {
+            query += ` AND CAST(json_extract(attributes, '$.${key}') AS INTEGER) >= ?`;
+            params.push(value.min);
+          }
+          if (value.max !== undefined) {
+            query += ` AND CAST(json_extract(attributes, '$.${key}') AS INTEGER) <= ?`;
+            params.push(value.max);
+          }
+          if (value.exact !== undefined) {
+            query += ` AND CAST(json_extract(attributes, '$.${key}') AS INTEGER) = ?`;
+            params.push(value.exact);
+          }
+        } else {
+          query += ` AND json_extract(attributes, '$.${key}') = ?`;
+          params.push(value);
+        }
+      }
+    }
+
+    query += ' ORDER BY name ASC';
+
+    if (options?.limit) {
+      query += ' LIMIT ?';
+      params.push(options.limit);
+      
+      if (options?.offset) {
+        query += ' OFFSET ?';
+        params.push(options.offset);
+      }
+    }
+
+    const rows = this.db.prepare(query).all(...params) as any[];
     return rows.map(row => ({
       id: row.id,
       gameId: row.gameId,
@@ -188,5 +307,10 @@ export class SqliteStorageProvider implements StorageProvider {
       createdAt: row.createdAt,
       updatedAt: row.updatedAt
     }));
+  }
+
+  async getCardTypes(gameId: string): Promise<string[]> {
+    const rows = this.db.prepare('SELECT DISTINCT type FROM cards WHERE gameId = ? ORDER BY type ASC').all(gameId) as any[];
+    return rows.map(row => row.type).filter(Boolean);
   }
 }

@@ -3,6 +3,7 @@
 ## Project Commands
 - Build: `npm run build`
 - Test: `npm test`
+- Ingest Data: `npm run ingest`
 - Lint: `npm run lint`
 
 ## Architecture & Conventions

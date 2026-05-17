@@ -17,7 +17,7 @@ async function verify() {
 
   const ygoAdapter = new YuGiOhAdapter();
   const mtgAdapter = new MtgAdapter();
-  const storage = new SqliteStorageProvider('./data-test-sqlite/duelpath.db');
+  const storage = new SqliteStorageProvider('./data/duelpath.db');
 
   try {
     // 1. Yu-Gi-Oh Fetch & Normalize
