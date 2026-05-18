@@ -2,9 +2,10 @@ import Database from 'better-sqlite3';
 import { StorageProvider } from '../../core/storage/StorageProvider.js';
 import { Card } from '../../core/models/Card.js';
 import { Format } from '../../core/models/Format.js';
-import { Deck } from '../../core/models/Deck.js';
+import { Deck, DeckCard } from '../../core/models/Deck.js';
 import { dirname } from 'path';
 import { existsSync, mkdirSync } from 'fs';
+import { YDKE } from '../../core/utils/ydke.js';
 
 export class SqliteStorageProvider implements StorageProvider {
   private db: Database.Database;
@@ -160,9 +161,11 @@ export class SqliteStorageProvider implements StorageProvider {
     }
 
     if (options?.types && options.types.length > 0) {
-      const typeConditions = options.types.map(() => 'subtypes LIKE ?').join(' OR ');
+      const typeConditions = options.types.map(() => '(type = ? OR subtypes LIKE ?)').join(' OR ');
       query += ` AND (${typeConditions})`;
-      params.push(...options.types.map(t => `%\"${t}\"%`));
+      options.types.forEach(t => {
+        params.push(t, `%\"${t}\"%`);
+      });
     }
 
     // Dynamic Attribute Filtering (JSON Extraction)
@@ -186,8 +189,13 @@ export class SqliteStorageProvider implements StorageProvider {
             params.push(value.max);
           }
           if (value.exact !== undefined) {
-            query += ` AND CAST(json_extract(attributes, '$.${key}') AS INTEGER) = ?`;
-            params.push(value.exact);
+            if (key === 'level') {
+              query += ` AND (CAST(json_extract(attributes, '$.level') AS INTEGER) = ? OR CAST(json_extract(attributes, '$.linkval') AS INTEGER) = ?)`;
+              params.push(value.exact, value.exact);
+            } else {
+              query += ` AND CAST(json_extract(attributes, '$.${key}') AS INTEGER) = ?`;
+              params.push(value.exact);
+            }
           }
         } else {
           query += ` AND json_extract(attributes, '$.${key}') = ?`;
@@ -223,12 +231,15 @@ export class SqliteStorageProvider implements StorageProvider {
   }
 
   async saveFormats(gameId: string, formats: Format[]): Promise<void> {
-    const insert = this.db.prepare(`
-      INSERT OR REPLACE INTO formats (id, gameId, name, description, rules)
-      VALUES (?, ?, ?, ?, ?)
-    `);
-
     const transaction = this.db.transaction((formatList: Format[]) => {
+      // Clear existing formats for this game to prevent stale entries
+      this.db.prepare('DELETE FROM formats WHERE gameId = ?').run(gameId);
+
+      const insert = this.db.prepare(`
+        INSERT INTO formats (id, gameId, name, description, rules)
+        VALUES (?, ?, ?, ?, ?)
+      `);
+
       for (const format of formatList) {
         insert.run(
           format.id,
@@ -255,6 +266,25 @@ export class SqliteStorageProvider implements StorageProvider {
   }
 
   async saveDeck(deck: Deck): Promise<void> {
+    let cardsValue: string;
+    let extraValue: string;
+    let sideValue: string;
+
+    if (deck.gameId === 'yugioh') {
+      // Store Yu-Gi-Oh decks as compact YDKE URIs
+      const mainIds = deck.cards.flatMap(c => Array(c.count).fill(parseInt(c.cardId)));
+      const extraIds = (deck.extraDeck || []).flatMap(c => Array(c.count).fill(parseInt(c.cardId)));
+      const sideIds = (deck.sideboard || []).flatMap(c => Array(c.count).fill(parseInt(c.cardId)));
+      
+      cardsValue = YDKE.encode(mainIds, extraIds, sideIds);
+      extraValue = '[]'; // Already packed in cardsValue
+      sideValue = '[]';
+    } else {
+      cardsValue = JSON.stringify(deck.cards);
+      extraValue = JSON.stringify(deck.extraDeck || []);
+      sideValue = JSON.stringify(deck.sideboard || []);
+    }
+
     this.db.prepare(`
       INSERT OR REPLACE INTO decks (id, name, gameId, formatId, cards, sideboard, extraDeck, createdAt, updatedAt)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -263,9 +293,9 @@ export class SqliteStorageProvider implements StorageProvider {
       deck.name,
       deck.gameId,
       deck.formatId,
-      JSON.stringify(deck.cards),
-      JSON.stringify(deck.sideboard || []),
-      JSON.stringify(deck.extraDeck || []),
+      cardsValue,
+      sideValue,
+      extraValue,
       deck.createdAt,
       deck.updatedAt
     );
@@ -275,14 +305,39 @@ export class SqliteStorageProvider implements StorageProvider {
     const row = this.db.prepare('SELECT * FROM decks WHERE id = ?').get(deckId) as any;
     if (!row) return null;
 
+    let cards: DeckCard[];
+    let extraDeck: DeckCard[] = [];
+    let sideboard: DeckCard[] = [];
+
+    if (row.cards.startsWith('ydke://')) {
+      const decoded = YDKE.decode(row.cards);
+      
+      const countOccurrences = (ids: number[]): DeckCard[] => {
+        const counts = new Map<number, number>();
+        ids.forEach(id => counts.set(id, (counts.get(id) || 0) + 1));
+        return Array.from(counts.entries()).map(([id, count]) => ({
+          cardId: id.toString(),
+          count
+        }));
+      };
+
+      cards = countOccurrences(decoded.main);
+      extraDeck = countOccurrences(decoded.extra);
+      sideboard = countOccurrences(decoded.side);
+    } else {
+      cards = JSON.parse(row.cards);
+      extraDeck = JSON.parse(row.extraDeck);
+      sideboard = JSON.parse(row.sideboard);
+    }
+
     return {
       id: row.id,
       name: row.name,
       gameId: row.gameId,
       formatId: row.formatId,
-      cards: JSON.parse(row.cards),
-      sideboard: JSON.parse(row.sideboard),
-      extraDeck: JSON.parse(row.extraDeck),
+      cards,
+      sideboard,
+      extraDeck,
       createdAt: row.createdAt,
       updatedAt: row.updatedAt
     };
@@ -296,17 +351,42 @@ export class SqliteStorageProvider implements StorageProvider {
       rows = this.db.prepare('SELECT * FROM decks').all() as any[];
     }
     
-    return rows.map(row => ({
-      id: row.id,
-      name: row.name,
-      gameId: row.gameId,
-      formatId: row.formatId,
-      cards: JSON.parse(row.cards),
-      sideboard: JSON.parse(row.sideboard),
-      extraDeck: JSON.parse(row.extraDeck),
-      createdAt: row.createdAt,
-      updatedAt: row.updatedAt
-    }));
+    return rows.map(row => {
+      let cards: DeckCard[];
+      let extraDeck: DeckCard[] = [];
+      let sideboard: DeckCard[] = [];
+
+      if (row.cards.startsWith('ydke://')) {
+        const decoded = YDKE.decode(row.cards);
+        const countOccurrences = (ids: number[]): DeckCard[] => {
+          const counts = new Map<number, number>();
+          ids.forEach(id => counts.set(id, (counts.get(id) || 0) + 1));
+          return Array.from(counts.entries()).map(([id, count]) => ({
+            cardId: id.toString(),
+            count
+          }));
+        };
+        cards = countOccurrences(decoded.main);
+        extraDeck = countOccurrences(decoded.extra);
+        sideboard = countOccurrences(decoded.side);
+      } else {
+        cards = JSON.parse(row.cards);
+        extraDeck = JSON.parse(row.extraDeck);
+        sideboard = JSON.parse(row.sideboard);
+      }
+
+      return {
+        id: row.id,
+        name: row.name,
+        gameId: row.gameId,
+        formatId: row.formatId,
+        cards,
+        sideboard,
+        extraDeck,
+        createdAt: row.createdAt,
+        updatedAt: row.updatedAt
+      };
+    });
   }
 
   async getCardTypes(gameId: string): Promise<string[]> {
