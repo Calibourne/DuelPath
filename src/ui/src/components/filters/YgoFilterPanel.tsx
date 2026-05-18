@@ -48,6 +48,8 @@ export const YgoFilterPanel: React.FC<YgoFilterPanelProps> = ({
   const spellTrapProperties = ['Continuous', 'Quick-Play', 'Equip', 'Field', 'Ritual', 'Counter'];
   const races = ['Warrior', 'Spellcaster', 'Dragon', 'Zombie', 'Fiend', 'Rock', 'Machine', 'Aqua', 'Pyro', 'Thunder', 'Beast', 'Plant', 'Reptile', 'Insect', 'Psychic', 'Cyberse', 'Wyrm'];
 
+
+
   const isMonsterSelected = selectedTypes.includes('Monster') || selectedTypes.some(t => monsterSubTypes.includes(t));
   const isSpellSelected = selectedTypes.includes('Spell');
   const isTrapSelected = selectedTypes.includes('Trap');
@@ -204,18 +206,20 @@ export const YgoFilterPanel: React.FC<YgoFilterPanelProps> = ({
                 <span className="w-2 h-2 rounded-full bg-blue-500"></span>
                 Monster Race
               </h3>
-              <div className="relative group">
-                <select 
-                  value={attrFilters.race || ''} 
-                  onChange={(e) => updateAttr('race', e.target.value || undefined)}
-                  className="w-full bg-background border border-border px-3 py-2.5 text-[11px] font-bold focus:border-primary outline-none appearance-none cursor-pointer hover:bg-white/[0.04] text-text transition-colors"
-                >
-                  <option value="" className="text-text-muted">( ANY RACE )</option>
-                  {races.map(r => <option key={r} value={r} className="text-text">{r.toUpperCase()}</option>)}
-                </select>
-                <div className="absolute right-3 top-3.5 pointer-events-none text-text-muted/40 group-hover:text-text-muted transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                </div>
+              <div className="grid grid-cols-3 gap-1.5">
+                {races.map(r => (
+                  <button
+                    key={r}
+                    onClick={() => updateAttr('race', attrFilters.race === r ? undefined : r)}
+                    className={`px-2 py-1.5 text-[9px] font-bold border text-left transition-all ${
+                      attrFilters.race === r
+                        ? 'bg-blue-500/20 border-blue-500 text-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.15)]'
+                        : 'bg-background border-border text-text-muted hover:border-blue-500/50 hover:text-blue-400 hover:bg-blue-500/5'
+                    }`}
+                  >
+                    {r.toUpperCase()}
+                  </button>
+                ))}
               </div>
             </section>
           </div>
