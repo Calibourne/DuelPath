@@ -14,5 +14,6 @@ export interface Format {
     restrictedCardIds?: Record<string, number>; // cardId -> max copies allowed if different from default
     maxPoints?: number;
     cardPoints?: Record<string, number>; // cardId -> points value
+    cardPointsByName?: Record<string, number>; // cardName -> points value
   };
 }

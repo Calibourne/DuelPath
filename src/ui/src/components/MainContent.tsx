@@ -96,7 +96,7 @@ export const CardGrid: React.FC = () => {
             </p>
           </div>
           <div className="text-[10px] text-text-muted/60 font-mono hidden sm:block">
-            {selectedGame.toUpperCase()} // {selectedFormat.toUpperCase()}
+            {selectedGame.toUpperCase()} // {selectedFormat?.toUpperCase() || 'NONE'}
           </div>
         </header>
 

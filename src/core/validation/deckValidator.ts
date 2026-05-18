@@ -62,7 +62,8 @@ export function validateDeck(deck: Deck, format: Format, lookup?: CardLookup): V
   if (rules.maxPoints !== undefined) {
     let totalPoints = 0;
     for (const { cardId, count } of allCards) {
-      const pointsPerCard = rules.cardPoints?.[cardId] ?? 0;
+      const cardName = lookup?.getCardName(cardId);
+      const pointsPerCard = (rules.cardPoints?.[cardId] ?? 0) + (cardName ? (rules.cardPointsByName?.[cardName] ?? 0) : 0);
       totalPoints += pointsPerCard * count;
     }
 

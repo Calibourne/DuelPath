@@ -10,6 +10,7 @@
     "lint": "echo \"No linting configured\"",
     "server": "npx tsx watch src/api/server.ts",
     "ingest": "npx tsx src/scripts/ingest.ts",
+    "export-decks": "npx tsx src/scripts/exportDecks.ts",
     "ui": "cd src/ui && npm run dev",
     "dev": "npx concurrently \"npm run server\" \"npm run ui\""
   },

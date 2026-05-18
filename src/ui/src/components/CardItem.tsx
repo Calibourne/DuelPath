@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Format } from '../types/index';
+import { Card, Format } from '../types';
+import { useUI } from '../context/UIContext';
 
 interface CardItemProps {
   card: Card;
@@ -7,6 +8,8 @@ interface CardItemProps {
 }
 
 export const CardItem: React.FC<CardItemProps> = ({ card, format }) => {
+  const { setHoveredCard } = useUI();
+
   const getRestrictionBadge = () => {
     if (!format) return null;
 
@@ -27,8 +30,8 @@ export const CardItem: React.FC<CardItemProps> = ({ card, format }) => {
       return <span className="bg-amber-500 text-black text-[10px] px-2 py-0.5 rounded-full font-bold uppercase shadow-sm">Max {restrictedCount}</span>;
     }
 
-    const points = rules.cardPoints?.[card.id];
-    if (points !== undefined) {
+    const points = (rules.cardPoints?.[card.id] ?? 0) + (rules.cardPointsByName?.[card.name] ?? 0);
+    if (points > 0) {
       return <span className="bg-emerald-500 text-black text-[10px] px-2 py-0.5 rounded-full font-bold uppercase shadow-sm">{points} Pts</span>;
     }
 
@@ -46,8 +49,11 @@ export const CardItem: React.FC<CardItemProps> = ({ card, format }) => {
                    (format?.id === 'goat' && card.attributes?.ban_goat === 'Forbidden');
 
   return (
-    <div className={`bg-surface border border-border rounded-normal overflow-hidden flex flex-col group hover:border-primary/50 transition-all ${isBanned ? 'opacity-60 grayscale-[0.5]' : ''}`}>
-      <div className="aspect-[2/3] relative bg-black/20 flex items-center justify-center overflow-hidden">
+    <div 
+      className={`bg-surface border border-border rounded-none overflow-hidden flex flex-col group hover:border-primary/50 transition-all ${isBanned ? 'opacity-60 grayscale-[0.5]' : ''}`}
+      onMouseEnter={() => setHoveredCard(card)}
+    >
+      <div className="aspect-[2/3] relative bg-black/20 flex items-center justify-center overflow-hidden border-b border-border/50">
         {card.imageUrl ? (
           <img 
             src={card.imageUrl} 
@@ -62,19 +68,18 @@ export const CardItem: React.FC<CardItemProps> = ({ card, format }) => {
         </div>
         {isBanned && (
           <div className="absolute inset-0 bg-red-950/20 flex items-center justify-center pointer-events-none">
-            <div className="border-2 border-red-600 text-red-600 font-black text-2xl uppercase tracking-tighter rotate-[-15deg] px-2 py-1 opacity-80">Forbidden</div>
+            <div className="border-2 border-red-600 text-red-600 font-black text-2xl uppercase tracking-tighter rotate-[-15deg] px-2 py-1 opacity-80 shadow-2xl">Forbidden</div>
           </div>
         )}
       </div>
-      <div className="p-3 flex-1 flex flex-col">
+      <div className="p-3 flex-1 flex flex-col bg-surface group-hover:bg-white/[0.02] transition-colors">
         <div className="flex justify-between items-start mb-1">
-          <h3 className={`font-bold text-sm truncate flex-1 mr-2 ${isBanned ? 'text-text-muted' : ''}`} title={card.name}>{card.name}</h3>
-          <span className="text-[10px] text-text-muted shrink-0">{card.rarity || ''}</span>
+          <h3 className={`font-bold text-[11px] truncate flex-1 mr-2 uppercase tracking-tight ${isBanned ? 'text-text-muted' : 'text-white'}`} title={card.name}>{card.name}</h3>
         </div>
-        <p className="text-[10px] text-primary/80 mb-2 uppercase font-bold tracking-tight">{card.type}</p>
-        <p className="text-xs text-text-muted line-clamp-3 italic leading-relaxed flex-1">
-          {card.text || 'No rules text available.'}
-        </p>
+        <div className="flex justify-between items-center">
+          <p className="text-[9px] text-primary/80 uppercase font-black tracking-widest">{card.type}</p>
+          <span className="text-[9px] text-text-muted/40 font-bold uppercase shrink-0">{card.rarity || ''}</span>
+        </div>
       </div>
     </div>
   );

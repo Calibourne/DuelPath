@@ -46,15 +46,15 @@ async function verify() {
     await storage.saveFormats('mtg', mtgFormats);
     const mtgLookup = new SimpleCardLookup(mtgCards);
 
-    // 3. Validate a Genesis deck (Yu-Gi-Oh)
+    // 3. Validate a Genesys deck (Yu-Gi-Oh)
     console.log('\n--- Validation Tests ---');
-    console.log('⚖️ Validating a Genesis deck with points...');
-    const genesisFormat = ygoFormats.find(f => f.id === 'genesis')!;
+    console.log('⚖️ Validating a Genesys deck with points...');
+    const genesysFormat = ygoFormats.find(f => f.id === 'genesys')!;
     const dummyYgoDeck: Deck = {
       id: 'test-ygo-deck',
       name: 'Test YGO Deck',
       gameId: 'yugioh',
-      formatId: genesisFormat.id,
+      formatId: genesysFormat.id,
       cards: [
         { cardId: '80181649', count: 3 }, // Cyber Dragon: 50 * 3 = 150 points (Limit 100)
       ],
@@ -62,8 +62,8 @@ async function verify() {
       updatedAt: Date.now(),
     };
 
-    const ygoResult = validateDeck(dummyYgoDeck, genesisFormat, ygoLookup);
-    console.log('Yu-Gi-Oh Genesis Result:', ygoResult.isValid ? 'VALID' : 'INVALID');
+    const ygoResult = validateDeck(dummyYgoDeck, genesysFormat, ygoLookup);
+    console.log('Yu-Gi-Oh Genesys Result:', ygoResult.isValid ? 'VALID' : 'INVALID');
     ygoResult.errors.forEach(err => console.log(`❌ ${err}`));
 
     // 4. Validate a Commander deck (MTG)

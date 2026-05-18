@@ -2,6 +2,7 @@ import { GameAdapter } from '../../core/interfaces/GameAdapter.js';
 import { Card, GameId } from '../../core/models/Card.js';
 import { Format } from '../../core/models/Format.js';
 import { StarterDeck } from '../../core/models/StarterDeck.js';
+import starterDecks from './data/starter-decks.json' with { type: 'json' };
 
 export class MtgAdapter implements GameAdapter {
   gameId: GameId = 'mtg';
@@ -10,21 +11,14 @@ export class MtgAdapter implements GameAdapter {
   async fetchCards(): Promise<Card[]> {
     console.log('📦 Fetching MTG bulk data metadata...');
     const bulkMetadataRes = await fetch(`${this.apiBase}/bulk-data`);
-    if (!bulkMetadataRes.ok) {
-      throw new Error(`Failed to fetch MTG bulk metadata: ${bulkMetadataRes.statusText}`);
-    }
+    if (!bulkMetadataRes.ok) throw new Error(`Failed to fetch MTG bulk metadata: ${bulkMetadataRes.statusText}`);
     const bulkMetadata = await bulkMetadataRes.json();
     const oracleCardsUri = bulkMetadata.data.find((d: any) => d.type === 'oracle_cards')?.download_uri;
-
-    if (!oracleCardsUri) {
-      throw new Error('Could not find download URI for MTG Oracle Cards bulk data.');
-    }
+    if (!oracleCardsUri) throw new Error('Could not find download URI for MTG Oracle Cards bulk data.');
 
     console.log('📦 Downloading MTG bulk data (this may take a moment)...');
     const response = await fetch(oracleCardsUri);
-    if (!response.ok) {
-      throw new Error(`Failed to download MTG bulk data: ${response.statusText}`);
-    }
+    if (!response.ok) throw new Error(`Failed to download MTG bulk data: ${response.statusText}`);
     
     const data = await response.json();
     console.log(`✅ Downloaded ${data.length} MTG cards. Normalizing...`);
@@ -33,118 +27,22 @@ export class MtgAdapter implements GameAdapter {
 
   async fetchFormats(): Promise<Format[]> {
     return [
-      {
-        id: 'standard',
-        gameId: 'mtg',
-        name: 'Standard',
-        rules: {
-          minDeckSize: 60,
-          maxCopiesPerCard: 4,
-        }
-      },
-      {
-        id: 'commander',
-        gameId: 'mtg',
-        name: 'Commander / EDH',
-        description: '100-card singleton format.',
-        rules: {
-          minDeckSize: 100,
-          maxDeckSize: 100,
-          maxCopiesPerCard: 1,
-        }
-      },
-      {
-        id: 'modern',
-        gameId: 'mtg',
-        name: 'Modern',
-        rules: {
-          minDeckSize: 60,
-          maxCopiesPerCard: 4,
-        }
-      },
-      {
-        id: 'pauper',
-        gameId: 'mtg',
-        name: 'Pauper',
-        description: 'Common cards only.',
-        rules: {
-          minDeckSize: 60,
-          maxCopiesPerCard: 4,
-          allowedCardTypes: ['Common'], // Simplified representation
-        }
-      },
-      {
-        id: 'pioneer',
-        gameId: 'mtg',
-        name: 'Pioneer',
-        rules: {
-          minDeckSize: 60,
-          maxCopiesPerCard: 4,
-        }
-      },
-      {
-        id: 'legacy',
-        gameId: 'mtg',
-        name: 'Legacy',
-        rules: {
-          minDeckSize: 60,
-          maxCopiesPerCard: 4,
-        }
-      },
-      {
-        id: 'vintage',
-        gameId: 'mtg',
-        name: 'Vintage',
-        rules: {
-          minDeckSize: 60,
-          maxCopiesPerCard: 4,
-        }
-      }
+      { id: 'standard', gameId: 'mtg', name: 'Standard', rules: { minDeckSize: 60, maxCopiesPerCard: 4 } },
+      { id: 'commander', gameId: 'mtg', name: 'Commander / EDH', description: '100-card singleton format.', rules: { minDeckSize: 100, maxDeckSize: 100, maxCopiesPerCard: 1 } },
+      { id: 'modern', gameId: 'mtg', name: 'Modern', rules: { minDeckSize: 60, maxCopiesPerCard: 4 } },
+      { id: 'pauper', gameId: 'mtg', name: 'Pauper', description: 'Common cards only.', rules: { minDeckSize: 60, maxCopiesPerCard: 4, allowedCardTypes: ['Common'] } },
+      { id: 'pioneer', gameId: 'mtg', name: 'Pioneer', rules: { minDeckSize: 60, maxCopiesPerCard: 4 } },
+      { id: 'legacy', gameId: 'mtg', name: 'Legacy', rules: { minDeckSize: 60, maxCopiesPerCard: 4 } },
+      { id: 'vintage', gameId: 'mtg', name: 'Vintage', rules: { minDeckSize: 60, maxCopiesPerCard: 4 } }
     ];
   }
 
   async fetchStarterDecks(): Promise<StarterDeck[]> {
-    return [
-      {
-        id: 'mtg-challenger-white',
-        gameId: 'mtg',
-        formatId: 'standard',
-        name: 'Mono White Aggro',
-        description: 'Fast, disruptive creature-based pressure. White-weenie style.',
-        coverCardName: 'Thalia, Guardian of Thraben',
-        cards: [
-          { name: 'Thalia, Guardian of Thraben', count: 4 },
-          { name: 'Adeline, Resplendent Cathar', count: 1 },
-          { name: 'Luminarch Aspirant', count: 4 },
-          { name: 'Skyclave Apparition', count: 4 },
-          { name: 'Elite Spellbinder', count: 4 },
-          { name: 'Plains', count: 20 },
-        ]
-      },
-      {
-        id: 'mtg-challenger-dimir',
-        gameId: 'mtg',
-        formatId: 'standard',
-        name: 'Dimir Control',
-        description: '"Draw-go" style with heavy removal and counterspells.',
-        coverCardName: 'Hullbreaker Horror',
-        cards: [
-          { name: 'Hullbreaker Horror', count: 2 },
-          { name: 'Iymrith, Desert Doom', count: 1 },
-          { name: 'Memory Deluge', count: 4 },
-          { name: 'Saw It Coming', count: 4 },
-          { name: 'Infernal Grasp', count: 4 },
-          { name: 'Island', count: 10 },
-          { name: 'Swamp', count: 10 },
-        ]
-      }
-    ];
+    return starterDecks as StarterDeck[];
   }
 
   normalizeCard(raw: any): Card {
     const typeLine = raw.type_line || '';
-    
-    // Canonical Type Normalization
     let canonicalType = 'Other';
     if (typeLine.includes('Creature')) canonicalType = 'Creature';
     else if (typeLine.includes('Instant')) canonicalType = 'Instant';
@@ -170,7 +68,6 @@ export class MtgAdapter implements GameAdapter {
         toughness: raw.toughness,
         colors: raw.colors,
         set: raw.set_name,
-        // Store original type line
         original_type: typeLine,
       }
     };

@@ -54,11 +54,11 @@ export const MtgFilterPanel: React.FC<MtgFilterPanelProps> = ({
   const showAll = selectedTypes.length === 0;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       {/* 1. Colors */}
       <section>
-        <h3 className="text-[9px] font-black text-text-muted/60 uppercase tracking-[0.2em] mb-3 px-1">Mana Identity</h3>
-        <div className="flex justify-between px-1">
+        <h3 className="text-[10px] font-black text-text-muted uppercase tracking-wider mb-4 px-1">Mana Identity</h3>
+        <div className="flex justify-between px-2">
           {colors.map((c) => {
             const isSelected = (attrFilters.colors || []).includes(c.id);
             return (
@@ -66,8 +66,10 @@ export const MtgFilterPanel: React.FC<MtgFilterPanelProps> = ({
                 key={c.id}
                 onClick={() => toggleColor(c.id)}
                 title={c.name}
-                className={`w-10 h-10 rounded-full border-2 transition-all flex items-center justify-center text-xs font-black shadow-sm ${c.color} ${
-                  isSelected ? 'opacity-100 scale-110 ring-4 ring-primary/20 z-10' : 'opacity-20 grayscale hover:opacity-70 hover:grayscale-0'
+                className={`w-11 h-11 rounded-full border-2 transition-all flex items-center justify-center text-[13px] font-black shadow-md ${c.color} ${
+                  isSelected 
+                    ? 'opacity-100 scale-110 ring-4 ring-primary/20 z-10 border-white' 
+                    : 'opacity-40 grayscale hover:opacity-100 hover:grayscale-0 hover:scale-110 hover:border-white/50 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)]'
                 }`}
               >
                 {c.id}
@@ -79,39 +81,42 @@ export const MtgFilterPanel: React.FC<MtgFilterPanelProps> = ({
 
       {/* 2. Categories */}
       <section>
-        <h3 className="text-[9px] font-black text-text-muted/60 uppercase tracking-[0.2em] mb-3 px-1">Card Categories</h3>
-        <div className="grid grid-cols-2 gap-1">
-          {categories.map((type) => (
-            <button
-              key={type}
-              onClick={() => toggleType(type)}
-              className={`px-3 py-2 rounded-none text-[9px] font-bold border text-left transition-all ${
-                selectedTypes.includes(type)
-                  ? 'bg-primary/20 border-primary text-primary'
-                  : 'bg-background border-border text-text-muted/40 hover:border-border-hover'
-              }`}
-            >
-              {type.toUpperCase()}
-            </button>
-          ))}
+        <h3 className="text-[10px] font-black text-text-muted uppercase tracking-wider mb-3 px-1">Card Categories</h3>
+        <div className="grid grid-cols-2 gap-2">
+          {categories.map((type) => {
+            const isSelected = selectedTypes.includes(type);
+            return (
+              <button
+                key={type}
+                onClick={() => toggleType(type)}
+                className={`px-3 py-2.5 rounded-none text-[10px] font-bold border text-left transition-all ${
+                  isSelected
+                    ? 'bg-primary text-black border-primary shadow-[0_0_15px_rgba(0,212,170,0.2)]'
+                    : 'bg-background border-border text-text-muted hover:border-primary/50 hover:text-primary hover:bg-primary/5'
+                }`}
+              >
+                {type.toUpperCase()}
+              </button>
+            );
+          })}
         </div>
       </section>
 
       {/* 3. CMC */}
       <section>
-        <h3 className="text-[9px] font-black text-text-muted/60 uppercase tracking-[0.2em] mb-3 px-1 flex justify-between">
+        <h3 className="text-[10px] font-black text-text-muted uppercase tracking-wider mb-4 px-1 flex justify-between items-center">
           <span>Mana Value</span>
-          {attrFilters.cmc?.exact !== undefined && <span className="text-primary font-mono">{attrFilters.cmc.exact}</span>}
+          {attrFilters.cmc?.exact !== undefined && <span className="text-primary font-mono text-xs">{attrFilters.cmc.exact}</span>}
         </h3>
-        <div className="grid grid-cols-6 gap-1">
+        <div className="grid grid-cols-6 gap-1.5">
           {[...Array(11)].map((_, i) => (
             <button
               key={i}
               onClick={() => updateAttr('cmc', attrFilters.cmc?.exact === i ? undefined : { exact: i })}
-              className={`h-7 flex items-center justify-center text-[10px] font-mono font-bold border transition-all ${
+              className={`h-8 flex items-center justify-center text-[11px] font-mono font-bold border transition-all ${
                 attrFilters.cmc?.exact === i
-                  ? 'bg-primary text-black border-primary'
-                  : 'bg-background border-border text-text-muted/20 hover:border-primary/50'
+                  ? 'bg-primary text-black border-primary scale-110 z-10'
+                  : 'bg-background border-border text-text-muted/60 hover:text-primary hover:border-primary/50'
               }`}
             >
               {i}
@@ -119,10 +124,10 @@ export const MtgFilterPanel: React.FC<MtgFilterPanelProps> = ({
           ))}
           <button
             onClick={() => updateAttr('cmc', attrFilters.cmc?.min === 10 ? undefined : { min: 10 })}
-            className={`h-7 flex items-center justify-center text-[10px] font-mono font-bold border transition-all ${
+            className={`h-8 flex items-center justify-center text-[11px] font-mono font-bold border transition-all ${
               attrFilters.cmc?.min === 10
-                ? 'bg-primary text-black border-primary'
-                : 'bg-background border-border text-text-muted/20 hover:border-primary/50'
+                ? 'bg-primary text-black border-primary scale-110 z-10'
+                : 'bg-background border-border text-text-muted/60 hover:text-primary hover:border-primary/50'
             }`}
           >
             10+
@@ -132,44 +137,44 @@ export const MtgFilterPanel: React.FC<MtgFilterPanelProps> = ({
 
       {/* 4. Power / Toughness */}
       {(showAll || isCreatureSelected) && (
-        <section className="space-y-3">
-          <h3 className="text-[9px] font-black text-text-muted/60 uppercase tracking-[0.2em] px-1">Combat Power</h3>
-          <div className="grid grid-cols-2 gap-3">
-            <div className="flex flex-col gap-1">
-              <span className="text-[8px] font-black text-text-muted/50 uppercase pl-1 tracking-tighter">Power</span>
-              <div className="flex gap-1">
+        <section className="space-y-4">
+          <h3 className="text-[10px] font-black text-text-muted uppercase tracking-wider px-1">Combat Power</h3>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-col gap-1.5">
+              <span className="text-[9px] font-black text-text-muted uppercase pl-1">Power</span>
+              <div className="flex gap-1.5">
                 <input
                   type="number"
                   placeholder="Min"
                   value={attrFilters.power?.min ?? ''}
                   onChange={(e) => updateAttr('power', { ...attrFilters.power, min: e.target.value ? parseInt(e.target.value) : undefined })}
-                  className="w-full bg-background border border-border px-2 py-1.5 text-[10px] font-mono focus:border-primary/50 outline-none"
+                  className="w-full bg-background border border-border px-3 py-2 text-[11px] font-mono focus:border-primary outline-none placeholder:text-text-muted/60 text-text"
                 />
                 <input
                   type="number"
                   placeholder="Max"
                   value={attrFilters.power?.max ?? ''}
                   onChange={(e) => updateAttr('power', { ...attrFilters.power, max: e.target.value ? parseInt(e.target.value) : undefined })}
-                  className="w-full bg-background border border-border px-2 py-1.5 text-[10px] font-mono focus:border-primary/50 outline-none"
+                  className="w-full bg-background border border-border px-3 py-2 text-[11px] font-mono focus:border-primary outline-none placeholder:text-text-muted/60 text-text"
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-1">
-              <span className="text-[8px] font-black text-text-muted/50 uppercase pl-1 tracking-tighter">Toughness</span>
-              <div className="flex gap-1">
+            <div className="flex flex-col gap-1.5">
+              <span className="text-[9px] font-black text-text-muted uppercase pl-1">Toughness</span>
+              <div className="flex gap-1.5">
                 <input
                   type="number"
                   placeholder="Min"
                   value={attrFilters.toughness?.min ?? ''}
                   onChange={(e) => updateAttr('toughness', { ...attrFilters.toughness, min: e.target.value ? parseInt(e.target.value) : undefined })}
-                  className="w-full bg-background border border-border px-2 py-1.5 text-[10px] font-mono focus:border-primary/50 outline-none"
+                  className="w-full bg-background border border-border px-3 py-2 text-[11px] font-mono focus:border-primary outline-none placeholder:text-text-muted/60 text-text"
                 />
                 <input
                   type="number"
                   placeholder="Max"
                   value={attrFilters.toughness?.max ?? ''}
                   onChange={(e) => updateAttr('toughness', { ...attrFilters.toughness, max: e.target.value ? parseInt(e.target.value) : undefined })}
-                  className="w-full bg-background border border-border px-2 py-1.5 text-[10px] font-mono focus:border-primary/50 outline-none"
+                  className="w-full bg-background border border-border px-3 py-2 text-[11px] font-mono focus:border-primary outline-none placeholder:text-text-muted/60 text-text"
                 />
               </div>
             </div>

@@ -26,6 +26,7 @@ export interface Format {
     restrictedCardIds?: Record<string, number>;
     maxPoints?: number;
     cardPoints?: Record<string, number>;
+    cardPointsByName?: Record<string, number>;
   };
 }
 

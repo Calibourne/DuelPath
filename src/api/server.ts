@@ -101,6 +101,30 @@ app.get('/api/games/:gameId/formats/:formatId/starter-decks', async (req, res) =
   }
 });
 
+// Get cards by name (batch)
+app.post('/api/games/:gameId/cards/by-names', async (req, res) => {
+  try {
+    const { names } = req.body;
+    if (!Array.isArray(names)) {
+      return res.status(400).json({ error: 'Names must be an array' });
+    }
+    
+    // Resolve each name to a card
+    const results = [];
+    for (const name of names) {
+      const cards = await storage.loadCards(req.params.gameId, {
+        search: `$${name}`, // Use the $ prefix we implemented for exact name match
+        limit: 1
+      });
+      if (cards.length > 0) results.push(cards[0]);
+    }
+    res.json(results);
+  } catch (error) {
+    console.error('❌ [API] Error loading cards by names:', error);
+    res.status(500).json({ error: 'Failed to load cards' });
+  }
+});
+
 app.listen(port, '0.0.0.0', () => {
   console.log(`📡 DuelPath API Server running at http://0.0.0.0:${port}`);
 });

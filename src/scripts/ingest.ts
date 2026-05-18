@@ -17,6 +17,9 @@ async function ingest() {
       
       console.log(`📡 Fetching ${adapter.gameId} formats...`);
       const formats = await adapter.fetchFormats();
+      if (adapter.gameId === 'yugioh') {
+        console.log('✅ Integrated Genesys points into Yu-Gi-Oh formats.');
+      }
       await storage.saveFormats(adapter.gameId, formats);
       console.log(`✅ Saved ${formats.length} formats.`);
 

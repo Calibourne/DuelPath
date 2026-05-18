@@ -1,0 +1,242 @@
+[
+  {
+    "id": "mtg-challenger-white",
+    "gameId": "mtg",
+    "formatId": "standard",
+    "name": "Mono White Aggro",
+    "description": "Fast, disruptive creature-based pressure. White-weenie style.",
+    "coverCardName": "Thalia, Guardian of Thraben",
+    "cards": [
+      { "name": "Thalia, Guardian of Thraben", "count": 4 },
+      { "name": "Adeline, Resplendent Cathar", "count": 1 },
+      { "name": "Luminarch Aspirant", "count": 4 },
+      { "name": "Skyclave Apparition", "count": 4 },
+      { "name": "Elite Spellbinder", "count": 4 },
+      { "name": "Plains", "count": 20 }
+    ]
+  },
+  {
+    "id": "mtg-challenger-dimir",
+    "gameId": "mtg",
+    "formatId": "standard",
+    "name": "Dimir Control",
+    "description": "\"Draw-go\" style with heavy removal and counterspells.",
+    "coverCardName": "Hullbreaker Horror",
+    "cards": [
+      { "name": "Hullbreaker Horror", "count": 2 },
+      { "name": "Iymrith, Desert Doom", "count": 1 },
+      { "name": "Memory Deluge", "count": 4 },
+      { "name": "Saw It Coming", "count": 4 },
+      { "name": "Infernal Grasp", "count": 4 },
+      { "name": "Island", "count": 10 },
+      { "name": "Swamp", "count": 10 }
+    ]
+  },
+  {
+    "id": "mtg-iconic-rats",
+    "gameId": "mtg",
+    "formatId": "modern",
+    "name": "Rats' Nest",
+    "description": "Iconic mono-black theme deck featuring the powerful Umezawa's Jitte. Swarm the board with relentless Nezumi.",
+    "coverCardName": "Umezawa's Jitte",
+    "cards": [
+      { "name": "Patron of the Nezumi", "count": 1 },
+      { "name": "Nezumi Graverobber // Nighteyes the Desecrator", "count": 1 },
+      { "name": "Nezumi Bone-Reader", "count": 2 },
+      { "name": "Nezumi Cutthroat", "count": 3 },
+      { "name": "Nezumi Ronin", "count": 4 },
+      { "name": "Nezumi Shadow-Watcher", "count": 1 },
+      { "name": "Numai Outcast", "count": 2 },
+      { "name": "Okiba-Gang Shinobi", "count": 1 },
+      { "name": "Skullsnatcher", "count": 4 },
+      { "name": "Throat Slitter", "count": 2 },
+      { "name": "Umezawa's Jitte", "count": 1 },
+      { "name": "Shuko", "count": 1 },
+      { "name": "Horobi's Whisper", "count": 2 },
+      { "name": "Rend Flesh", "count": 1 },
+      { "name": "Befoul", "count": 2 },
+      { "name": "Dance of Shadows", "count": 1 },
+      { "name": "Psychic Spear", "count": 1 },
+      { "name": "Stir the Grave", "count": 1 },
+      { "name": "Three Tragedies", "count": 2 },
+      { "name": "Genju of the Fens", "count": 1 },
+      { "name": "Midnight Covenant", "count": 1 },
+      { "name": "Ragged Veins", "count": 1 },
+      { "name": "Swamp", "count": 24 }
+    ]
+  },
+  {
+    "id": "mtg-challenger-phoenix",
+    "gameId": "mtg",
+    "formatId": "pioneer",
+    "name": "Izzet Phoenix",
+    "description": "Competitive Pioneer deck focused on recurring Arclight Phoenix by casting multiple spells in a single turn.",
+    "coverCardName": "Arclight Phoenix",
+    "cards": [
+      { "name": "Arclight Phoenix", "count": 2 },
+      { "name": "Crackling Drake", "count": 4 },
+      { "name": "Thing in the Ice", "count": 2 },
+      { "name": "Consider", "count": 4 },
+      { "name": "Fiery Impulse", "count": 2 },
+      { "name": "Flame-Blessed Bolt", "count": 2 },
+      { "name": "Izzet Charm", "count": 3 },
+      { "name": "Lightning Axe", "count": 3 },
+      { "name": "Opt", "count": 4 },
+      { "name": "Chart a Course", "count": 4 },
+      { "name": "Expressive Iteration", "count": 2 },
+      { "name": "Pieces of the Puzzle", "count": 3 },
+      { "name": "Treasure Cruise", "count": 4 },
+      { "name": "Island", "count": 6 },
+      { "name": "Mountain", "count": 4 },
+      { "name": "Shivan Reef", "count": 4 },
+      { "name": "Steam Vents", "count": 1 },
+      { "name": "Sulfur Falls", "count": 2 },
+      { "name": "Temple of Epiphany", "count": 4 }
+    ]
+  },
+  {
+    "id": "mtg-commander-necrons",
+    "gameId": "mtg",
+    "formatId": "commander",
+    "name": "Necron Dynasties",
+    "description": "High-synergy mono-black artifact deck from Warhammer 40,000. Rise from the stasis tombs and reclaim the galaxy.",
+    "coverCardName": "Szarekh, the Silent King",
+    "cards": [
+      { "name": "Szarekh, the Silent King", "count": 1 },
+      { "name": "Anrakyr the Traveller", "count": 1 },
+      { "name": "Canoptek Scarab Swarm", "count": 1 },
+      { "name": "Imotekh the Stormlord", "count": 1 },
+      { "name": "Necron Overlord", "count": 1 },
+      { "name": "Sol Ring", "count": 1 },
+      { "name": "Arcane Signet", "count": 1 },
+      { "name": "Caged Sun", "count": 1 },
+      { "name": "Living Death", "count": 1 },
+      { "name": "Mutilate", "count": 1 },
+      { "name": "Go for the Throat", "count": 1 },
+      { "name": "Vault of Whispers", "count": 1 },
+      { "name": "Swamp", "count": 30 }
+    ]
+  },
+  {
+    "id": "mtg-iconic-psychatog",
+    "gameId": "mtg",
+    "formatId": "modern",
+    "name": "Psychatog (2002 World Champ)",
+    "description": "The dominant combo-control deck of the Odyssey era. Win in a single swing with a massive Psychatog.",
+    "coverCardName": "Psychatog",
+    "cards": [
+      { "name": "Psychatog", "count": 4 },
+      { "name": "Accumulated Knowledge", "count": 4 },
+      { "name": "Counterspell", "count": 4 },
+      { "name": "Circular Logic", "count": 4 },
+      { "name": "Fact or Fiction", "count": 4 },
+      { "name": "Nightscape Familiar", "count": 3 },
+      { "name": "Upheaval", "count": 4 },
+      { "name": "Deep Analysis", "count": 4 },
+      { "name": "Island", "count": 10 },
+      { "name": "Swamp", "count": 2 },
+      { "name": "Underground River", "count": 3 }
+    ]
+  },
+  {
+    "id": "mtg-iconic-affinity",
+    "gameId": "mtg",
+    "formatId": "modern",
+    "name": "Affinity (2005 Classic)",
+    "description": "One of the fastest aggro decks in history. Use artifact lands to dump your hand by turn 2.",
+    "coverCardName": "Arcbound Ravager",
+    "cards": [
+      { "name": "Arcbound Ravager", "count": 4 },
+      { "name": "Arcbound Worker", "count": 4 },
+      { "name": "Disciple of the Vault", "count": 4 },
+      { "name": "Frogmite", "count": 4 },
+      { "name": "Myr Enforcer", "count": 3 },
+      { "name": "Thoughtcast", "count": 4 },
+      { "name": "Cranial Plating", "count": 3 },
+      { "name": "Darksteel Citadel", "count": 4 },
+      { "name": "Seat of the Synod", "count": 4 },
+      { "name": "Vault of Whispers", "count": 4 }
+    ]
+  },
+  {
+    "id": "mtg-iconic-cawblade",
+    "gameId": "mtg",
+    "formatId": "modern",
+    "name": "Caw-Blade (2011)",
+    "description": "The deck so powerful it forced Standard bans. Master-class equipment and control synergy.",
+    "coverCardName": "Jace, the Mind Sculptor",
+    "cards": [
+      { "name": "Stoneforge Mystic", "count": 4 },
+      { "name": "Squadron Hawk", "count": 4 },
+      { "name": "Jace, the Mind Sculptor", "count": 4 },
+      { "name": "Preordain", "count": 4 },
+      { "name": "Mana Leak", "count": 4 },
+      { "name": "Sword of Feast and Famine", "count": 1 },
+      { "name": "Celestial Colonnade", "count": 4 },
+      { "name": "Glacial Fortress", "count": 4 },
+      { "name": "Island", "count": 2 },
+      { "name": "Plains", "count": 2 }
+    ]
+  },
+  {
+    "id": "mtg-iconic-jund",
+    "gameId": "mtg",
+    "formatId": "modern",
+    "name": "Classic Jund (2009)",
+    "description": "The gold standard of value midrange. Out-grind your opponent with constant 2-for-1 card advantage.",
+    "coverCardName": "Bloodbraid Elf",
+    "cards": [
+      { "name": "Bloodbraid Elf", "count": 4 },
+      { "name": "Sprouting Thrinax", "count": 4 },
+      { "name": "Putrid Leech", "count": 4 },
+      { "name": "Broodmate Dragon", "count": 2 },
+      { "name": "Lightning Bolt", "count": 4 },
+      { "name": "Blightning", "count": 4 },
+      { "name": "Terminate", "count": 3 },
+      { "name": "Savage Lands", "count": 4 },
+      { "name": "Rootbound Crag", "count": 4 },
+      { "name": "Mountain", "count": 3 },
+      { "name": "Swamp", "count": 3 },
+      { "name": "Forest", "count": 2 }
+    ]
+  },
+  {
+    "id": "mtg-iconic-burn",
+    "gameId": "mtg",
+    "formatId": "legacy",
+    "name": "Mono-Red Burn",
+    "description": "Direct, relentless fire. End the match before it even begins.",
+    "coverCardName": "Lightning Bolt",
+    "cards": [
+      { "name": "Goblin Guide", "count": 4 },
+      { "name": "Monastery Swiftspear", "count": 4 },
+      { "name": "Eidolon of the Great Revel", "count": 4 },
+      { "name": "Lightning Bolt", "count": 4 },
+      { "name": "Chain Lightning", "count": 4 },
+      { "name": "Lava Spike", "count": 4 },
+      { "name": "Rift Bolt", "count": 4 },
+      { "name": "Fireblast", "count": 4 },
+      { "name": "Mountain", "count": 20 }
+    ]
+  },
+  {
+    "id": "mtg-iconic-elves",
+    "gameId": "mtg",
+    "formatId": "legacy",
+    "name": "Selesnya Elves",
+    "description": "A swarm of mana-producers that can draw the entire deck and win in one explosive turn.",
+    "coverCardName": "Craterhoof Behemoth",
+    "cards": [
+      { "name": "Nettle Sentinel", "count": 4 },
+      { "name": "Heritage Druid", "count": 4 },
+      { "name": "Wirewood Symbiote", "count": 4 },
+      { "name": "Quirion Ranger", "count": 4 },
+      { "name": "Elvish Visionary", "count": 4 },
+      { "name": "Craterhoof Behemoth", "count": 1 },
+      { "name": "Glimpse of Nature", "count": 4 },
+      { "name": "Green Sun's Zenith", "count": 4 },
+      { "name": "Natural Order", "count": 4 },
+      { "name": "Forest", "count": 20 }
+    ]
+  }
+]
