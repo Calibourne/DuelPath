@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useFormat } from '../context/FormatContext';
+import { useUI } from '../context/UIContext';
 import { Card } from '../types/index';
 import { CardItem } from './CardItem';
 import { FilterPanel } from './FilterPanel';
 
 export const CardGrid: React.FC = () => {
   const { selectedGame, selectedFormat, formats, loading: formatsLoading } = useFormat();
+  const { setCardCount } = useUI();
   const [cards, setCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -75,6 +77,10 @@ export const CardGrid: React.FC = () => {
   useEffect(() => {
     fetchCards(true);
   }, [selectedGame, debouncedSearch, selectedTypes, attrFilters]);
+
+  useEffect(() => {
+    setCardCount(cards.length);
+  }, [cards]);
 
   if (formatsLoading && cards.length === 0) {
     return (
